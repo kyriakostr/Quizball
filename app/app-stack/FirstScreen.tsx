@@ -7,7 +7,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import images from "../global-styles/Global.styles";
-import firstScreenStyles from "./app-stack-styles/FirstScreen.style";
+import firstScreenStyles from "./app-stack-styles/FirstScreen.styles";
 import { FirstScreenprops } from "./screenparams/ScreenParams";
 
 export default function WelcomeScreen({ navigation }: FirstScreenprops) {

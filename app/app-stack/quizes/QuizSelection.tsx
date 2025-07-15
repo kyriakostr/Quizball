@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { Animated, StyleSheet, Text, View } from "react-native";
+import { Animated, Text } from "react-native";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import SelectCategoryButton from "@/components/SelectCategoryButton";
+import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
+import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 
 export default function QuizSelection() {
   const anim1 = useRef(new Animated.Value(0)).current;
@@ -29,16 +32,8 @@ export default function QuizSelection() {
   }, []);
 
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        alignItems: "center",
-        paddingVertical: 30,
-        backgroundColor: "#d0f0f2",
-        gap: 20,
-      }}
-    >
-      <Text style={styles.title}>Select a category</Text>
+    <SafeAreaView style={quizSelectionStyles.view}>
+      <Text style={quizSelectionStyles.title}>Select a category</Text>
 
       <Animated.View
         style={{
@@ -53,7 +48,13 @@ export default function QuizSelection() {
           opacity: anim1,
         }}
       >
-        <SelectCategoryButton text="Ιστορία" color="#A2653C" />
+        <SelectCategoryButton
+          text="Ιστορία"
+          color="#A2653C"
+          icon={
+            <MaterialIcons name="temple-buddhist" size={24} color="white" />
+          }
+        />
       </Animated.View>
 
       <Animated.View
@@ -69,19 +70,12 @@ export default function QuizSelection() {
           opacity: anim2,
         }}
       >
-        <SelectCategoryButton text="Γεωγραφία" color="#00BCD4" />
+        <SelectCategoryButton
+          text="Γεωγραφία"
+          color="#00BCD4"
+          icon={<FontAwesome6 name="earth-americas" size={24} color="white" />}
+        />
       </Animated.View>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 28,
-    fontWeight: "600",
-    color: "#f7a600",
-    textAlign: "center",
-    marginBottom: 8,
-    letterSpacing: 0.5,
-  },
-});
