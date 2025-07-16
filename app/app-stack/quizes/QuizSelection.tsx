@@ -39,7 +39,9 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
   return (
     <SafeAreaView style={quizSelectionStyles.view}>
       <Text style={quizSelectionStyles.title}>Select a category</Text>
-      <Text>Player {currentPlayer.playerId} Plays</Text>
+      <Text style={quizSelectionStyles.playerTitle}>
+        Player {currentPlayer.playerId} Plays
+      </Text>
       <Animated.View
         style={{
           transform: [
@@ -91,6 +93,7 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
               color: "#00BCD4",
             });
           }}
+          disabled={disableCategory(Category.GEOGRAPHY)}
           text="Γεωγραφία"
           color="#00BCD4"
           icon={<FontAwesome6 name="earth-americas" size={24} color="white" />}

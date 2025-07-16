@@ -1,13 +1,28 @@
-import { PlayerContext } from "@/contexts/PlayerContext";
+import {
+  player1DeafaultInfo,
+  player2DeafaultInfo,
+  PlayerContext,
+} from "@/contexts/PlayerContext";
 import categoryPlaysMap from "@/types/category-plays.map";
 import { Category } from "@/types/category.enum";
 import { Difficulty } from "@/types/difficulty.enum";
 import { PlayerDetails } from "@/types/player-details.type";
+import { PlayerId } from "@/types/playerId.enum";
 import { useContext } from "react";
 
 export const usePlayerContext = () => {
   const { currentPlayer, playersInfo, setPlayersInfo, setCurrentPlayer } =
     useContext(PlayerContext);
+
+  const setDefaultPlayerInfo = () => {
+    const newDefaultPlayersInfo = playersInfo.map((playerInfo) =>
+      playerInfo.playerId === PlayerId.PLAYER1ID
+        ? player1DeafaultInfo
+        : player2DeafaultInfo
+    );
+    setPlayersInfo(newDefaultPlayersInfo);
+    setCurrentPlayer(player1DeafaultInfo);
+  };
 
   const disableCategory = (category: Category): boolean => {
     if (
@@ -71,6 +86,7 @@ export const usePlayerContext = () => {
 
   return {
     currentPlayer,
+    setDefaultPlayerInfo,
     setNewCurrentPlayer,
     setCurrentPlayerInfo,
     disableCategory,

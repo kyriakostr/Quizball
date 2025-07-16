@@ -1,14 +1,15 @@
 import { PlayerInfo } from "@/types/player-info.type";
+import { PlayerId } from "@/types/playerId.enum";
 import { createContext, FC, PropsWithChildren, useState } from "react";
 
 export const player1DeafaultInfo: PlayerInfo = {
-  playerId: "1",
+  playerId: PlayerId.PLAYER1ID,
   playingDetails: {},
   points: 0,
 };
 
 export const player2DeafaultInfo: PlayerInfo = {
-  playerId: "2",
+  playerId: PlayerId.PLAYER2ID,
   playingDetails: {},
   points: 0,
 };

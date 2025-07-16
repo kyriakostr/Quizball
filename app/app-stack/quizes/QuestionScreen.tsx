@@ -1,7 +1,9 @@
 import { usePlayerContext } from "@/hooks/usePlayerContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
+  Alert,
   Animated,
+  BackHandler,
   Easing,
   StyleSheet,
   Text,
@@ -21,6 +23,32 @@ export default function QuestionScreen({
   const [shakeAnim] = useState(new Animated.Value(0));
   const { setCurrentPlayerInfo, setNewCurrentPlayer } = usePlayerContext();
   const { question, category, difficulty } = route.params;
+  useEffect(() => {
+    const backAction = () => {
+      if (error !== "" || correctAnswer !== "") {
+        Alert.alert(
+          "Hold on!",
+          "Are you sure you want to go back?You are going to end the game",
+          [
+            {
+              text: "Cancel",
+              onPress: () => null,
+              style: "cancel",
+            },
+            { text: "YES", onPress: () => navigation.popToTop() },
+          ]
+        );
+        return true;
+      }
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      backAction
+    );
+
+    return () => backHandler.remove();
+  }, [error, correctAnswer]);
 
   const triggerShake = () => {
     Animated.sequence([
