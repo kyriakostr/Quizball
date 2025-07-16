@@ -1,16 +1,18 @@
-import React from "react";
+import { player1DeafaultInfo, PlayerContext } from "@/contexts/PlayerContext";
+import React, { useContext } from "react";
 import {
-  View,
-  Text,
   Image,
-  TouchableOpacity,
   SafeAreaView,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import images from "../global-styles/Global.styles";
 import firstScreenStyles from "./app-stack-styles/FirstScreen.styles";
 import { FirstScreenprops } from "./screenparams/ScreenParams";
 
 export default function WelcomeScreen({ navigation }: FirstScreenprops) {
+  const {setCurrentPlayer} = useContext(PlayerContext)
   return (
     <SafeAreaView style={firstScreenStyles.container}>
       <View style={firstScreenStyles.logoContainer}>
@@ -28,7 +30,8 @@ export default function WelcomeScreen({ navigation }: FirstScreenprops) {
 
       <TouchableOpacity
         onPress={() => {
-          navigation.push("app-stack/quizes/FirstQuiz");
+          setCurrentPlayer(player1DeafaultInfo)
+          navigation.push("app-stack/quizes/QuizSelection");
         }}
         style={firstScreenStyles.button}
       >

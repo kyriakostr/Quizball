@@ -4,12 +4,10 @@ import {
   ThemeProvider,
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
+import { PlayerProvider } from "@/contexts/PlayerContext";
 import { useColorScheme } from "@/hooks/useColorScheme";
-import FirstScreen from "./app-stack/FirstScreen";
 import AppStack from "./app-stack/AppStack";
 
 export default function RootLayout() {
@@ -25,7 +23,9 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <AppStack />
+      <PlayerProvider>
+        <AppStack />
+      </PlayerProvider>
     </ThemeProvider>
   );
 }
