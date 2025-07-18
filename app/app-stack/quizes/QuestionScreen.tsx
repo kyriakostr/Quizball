@@ -3,12 +3,7 @@ import { useGetInfo } from "@/hooks/useGetInfo";
 import { usePlayerContext } from "@/hooks/usePlayerContext";
 import { CommonActions } from "@react-navigation/native";
 import { useState } from "react";
-import {
-  Animated,
-  Text,
-  TextInput,
-  TouchableOpacity
-} from "react-native";
+import { Animated, Text, TextInput, TouchableOpacity } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { questionScreenStyles } from "../app-stack-styles/QuestionScreen.styles";
@@ -18,19 +13,21 @@ export default function QuestionScreen({
   navigation,
   route,
 }: QuestionScreenprops) {
-  const [answer, setAnswer] = useState<string | number>();
+  const [answer, setAnswer] = useState<string | number>("");
   const [error, setError] = useState<string>("");
   const [correctAnswer, setCorrectAnswer] = useState<string>("");
-
+  const [help, setHelp] = useState<boolean>(false);
   const {
+    currentPlayer,
+    setCurrentPlayersHelps,
     setGameDetailsInfo,
     setNewCurrentPlayer,
     addPointsToPlayer,
     endTheGame,
   } = usePlayerContext();
   const { question, category, difficulty } = route.params;
-  useBackHandler(error, correctAnswer);
-  const { info, setSuggestionsArray, suggestions } = useGetInfo(question);
+  useBackHandler();
+  const { setSuggestionsArray, suggestions } = useGetInfo(question);
 
   return (
     <SafeAreaView style={questionScreenStyles.container}>
@@ -50,8 +47,8 @@ export default function QuestionScreen({
           placeholder="Your Answer"
           placeholderTextColor="#aaa"
           onChangeText={(text) => {
-            setAnswer(text.trim());
-            setSuggestionsArray(text.trim());
+            setAnswer(text);
+            setSuggestionsArray(text);
           }}
         />
         {answer !== "" &&
@@ -81,21 +78,67 @@ export default function QuestionScreen({
           activeOpacity={0.7}
           disabled={error !== "" || correctAnswer !== ""}
           onPress={() => {
-            if (answer != question?.answer) {
+            setGameDetailsInfo(category, difficulty);
+
+            if (!answer) {
+              setError("🚫 Not the correct answer.");
+              addPointsToPlayer(false, question?.points || 0);
+            }
+            if (
+              !question?.answer
+                .toString()
+                .includes(answer?.toString().trim()) &&
+              answer
+            ) {
               setCorrectAnswer("");
               setError("🚫 Not the correct answer.");
-              setGameDetailsInfo(category, difficulty);
-              addPointsToPlayer(false, difficulty);
-            } else {
+              addPointsToPlayer(false, question?.points || 0);
+            }
+            if (
+              question?.answer.toString().includes(answer?.toString().trim()) &&
+              answer
+            ) {
               setError("");
               setCorrectAnswer("✅ Correct Answer! 🎊");
-              setGameDetailsInfo(category, difficulty);
-              addPointsToPlayer(true, difficulty);
+              addPointsToPlayer(true, question?.points || 0);
             }
           }}
         >
           <Text style={questionScreenStyles.buttonText}>🎉 Submit</Text>
         </TouchableOpacity>
+
+        {currentPlayer.help.fiftyFifty &&
+          help &&
+          question?.fiftyFifty.map((help, index) => (
+            <TouchableOpacity
+              style={[
+                questionScreenStyles.fiftyFiftyButton,
+                (error !== "" || correctAnswer !== "") &&
+                  questionScreenStyles.buttonDisabled,
+              ]}
+              activeOpacity={0.7}
+              disabled={error !== "" || correctAnswer !== ""}
+              onPress={() => {
+                setAnswer(help);
+              }}
+              key={index}
+            >
+              <Text style={questionScreenStyles.fiftyFiftyText}>{help}</Text>
+            </TouchableOpacity>
+          ))}
+
+        {!currentPlayer.help.fiftyFifty && (
+          <TouchableOpacity
+            style={[questionScreenStyles.fiftyFiftyHelpButton]}
+            activeOpacity={0.7}
+            onPress={() => {
+              setHelp(true);
+              setCurrentPlayersHelps();
+            }}
+          >
+            <Text style={questionScreenStyles.fiftyFiftyHelpText}>50-50</Text>
+          </TouchableOpacity>
+        )}
 
         {error !== "" && (
           <Text style={questionScreenStyles.errorText}>{error}</Text>

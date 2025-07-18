@@ -91,4 +91,50 @@ export const questionScreenStyles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "500",
   },
+  fiftyFiftyButton: {
+    backgroundColor: "#2e7d32", // dark green (like a field)
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 30,
+    borderWidth: 2,
+    borderColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 10,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 3,
+    elevation: 4,
+  },
+
+  fiftyFiftyText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+    letterSpacing: 1,
+  },
+  fiftyFiftyHelpButton: {
+    backgroundColor: "#1e88e5", // vibrant blue
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 25,
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 10,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+    borderWidth: 2,
+    borderColor: "#ffffff",
+  },
+
+  fiftyFiftyHelpText: {
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "bold",
+    letterSpacing: 1,
+  },
 });

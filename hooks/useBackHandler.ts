@@ -4,25 +4,23 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useEffect } from "react";
 import { Alert, BackHandler } from "react-native";
 
-export const useBackHandler = (error: string, correctAnswer: string) => {
+export const useBackHandler = () => {
   const navigation = useNavigation<NativeStackNavigationProp<RootParamsList>>();
   useEffect(() => {
     const backAction = () => {
-      if (error !== "" || correctAnswer !== "") {
-        Alert.alert(
-          "Hold on!",
-          "Are you sure you want to go back?You are going to end the game",
-          [
-            {
-              text: "Cancel",
-              onPress: () => null,
-              style: "cancel",
-            },
-            { text: "YES", onPress: () => navigation.popToTop() },
-          ]
-        );
-        return true;
-      }
+      Alert.alert(
+        "Hold on!",
+        "Are you sure you want to go back?You are going to end the game",
+        [
+          {
+            text: "Cancel",
+            onPress: () => null,
+            style: "cancel",
+          },
+          { text: "YES", onPress: () => navigation.popToTop() },
+        ]
+      );
+      return true;
     };
 
     const backHandler = BackHandler.addEventListener(
@@ -31,5 +29,5 @@ export const useBackHandler = (error: string, correctAnswer: string) => {
     );
 
     return () => backHandler.remove();
-  }, [error, correctAnswer]);
+  }, []);
 };

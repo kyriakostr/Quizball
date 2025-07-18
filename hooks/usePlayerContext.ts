@@ -10,7 +10,6 @@ import { Difficulty } from "@/types/difficulty.enum";
 import { GameDetails } from "@/types/player-details.type";
 import { PlayerInfo } from "@/types/player-info.type";
 import { PlayerId } from "@/types/playerId.enum";
-import { pointSystemMap } from "@/types/point-system.map";
 import { useContext, useState } from "react";
 
 export const usePlayerContext = () => {
@@ -31,6 +30,16 @@ export const usePlayerContext = () => {
     )[0];
 
     setWinningPlayer(winningPlayer);
+  };
+
+  const setCurrentPlayersHelps = () => {
+    setCurrentPlayer((prev) => ({
+      ...prev,
+      help: {
+        fiftyFifty: true,
+        doublePoints: prev.help.doublePoints,
+      },
+    }));
   };
 
   const setDefaultPlayerInfo = () => {
@@ -111,8 +120,8 @@ export const usePlayerContext = () => {
     }
   };
 
-  const addPointsToPlayer = (correct: boolean, difficulty: Difficulty) => {
-    const points = correct ? pointSystemMap[difficulty] : 0;
+  const addPointsToPlayer = (correct: boolean, questionPoints: number) => {
+    const points = correct ? questionPoints : 0;
     setCurrentPlayer((prev) => ({
       ...prev,
       points: prev.points + points,
@@ -134,6 +143,7 @@ export const usePlayerContext = () => {
   return {
     currentPlayer,
     winningPlayer,
+    setCurrentPlayersHelps,
     getFootballTeams,
     setDefaultPlayerInfo,
     setNewCurrentPlayer,

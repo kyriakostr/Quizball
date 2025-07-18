@@ -1,4 +1,4 @@
-import { Flags } from "@/types/flag.enum";
+import { AnswerType } from "@/types/answer-type.enum";
 import { Question } from "@/types/question.type";
 import { useEffect, useState } from "react";
 import countries from "../assets/data/countries.json";
@@ -12,21 +12,23 @@ export const useGetInfo = (question?: Question) => {
   }, []);
 
   const setSuggestionsArray = (answer: string) => {
-    const newArray = info.filter((i) => String(i).startsWith(answer)).slice(0, 5);;
+    const newArray = info
+      .filter((i) => String(i).startsWith(answer))
+      .slice(0, 5);
     setSuggestions([...newArray]);
   };
 
   const setInfos = (question?: Question) => {
-    switch (question?.flag) {
-      case Flags.PLAYER: {
+    switch (question?.answer_type) {
+      case AnswerType.PLAYER: {
         setInfo([...getAllProperties(players, "name")]);
         break;
       }
-      case Flags.COUNTRY: {
+      case AnswerType.COUNTRY: {
         setInfo([...getAllProperties(countries, "name")]);
         break;
       }
-      case Flags.TEAM: {
+      case AnswerType.TEAM: {
         break;
       }
       default: {

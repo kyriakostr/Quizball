@@ -1,0 +1,1659 @@
+{
+  "history": {
+    "X1": [
+      {
+        "id": "HIS-001",
+        "question": "Πόσες φορές έχει κερδίσει τη Χρυσή Μπάλα ο Λιονέλ Μέσι;",
+        "answer": 8,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [8, 7]
+      },
+      {
+        "id": "HIS-002",
+        "question": "Ποιος είναι ο τελευταίος αμυντικός που κέρδισε τη Χρυσή Μπάλα;",
+        "answer": "Fabio Cannavaro",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Fabio Cannavaro", "Paolo Maldini"]
+      },
+      {
+        "id": "HIS-003",
+        "question": "Πόσα Μουντιάλ έχει κερδίσει η Βραζιλία;",
+        "answer": 5,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [5, 4]
+      },
+      {
+        "id": "HIS-006",
+        "question": "Ποιος είναι ο πρώτος σκόρερ στην ιστορία του Champions League;",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Cristiano Ronaldo", "Lionel Messi"]
+      },
+      {
+        "id": "HIS-007",
+        "question": "Πόσες φορές έχει κατακτήσει το Champions League η Ρεάλ Μαδρίτης μέχρι το 2024;",
+        "answer": 15,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [15, 14]
+      },
+      {
+        "id": "HIS-008",
+        "question": "Ποιος ποδοσφαιριστής έχει τις περισσότερες συμμετοχές στην ιστορία του Euro;",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Cristiano Ronaldo", "Gianluigi Buffon"]
+      },
+      {
+        "id": "HIS-009",
+        "question": "Πόσα γκολ πέτυχε ο Μίροσλαβ Κλόζε σε τελικές φάσεις Μουντιάλ;",
+        "answer": 16,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [16, 15]
+      },
+      {
+        "id": "HIS-010",
+        "question": "Ποια ομάδα κέρδισε το πρώτο Παγκόσμιο Κύπελλο το 1930;",
+        "answer": "Uruguay",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Uruguay", "Argentina"]
+      },
+      {
+        "id": "HIS-011",
+        "question": "Ποιος είναι ο μοναδικός ποδοσφαιριστής που έχει κερδίσει 3 Μουντιάλ;",
+        "answer": "Pelé",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Pelé", "Cafu"]
+      },
+      {
+        "id": "HIS-012",
+        "question": "Πόσους τίτλους Premier League έχει κερδίσει η Μάντσεστερ Γιουνάιτεντ μέχρι το 2024;",
+        "answer": 13,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [13, 12]
+      },
+      {
+        "id": "HIS-013",
+        "question": "Ποιος ήταν ο προπονητής της Εθνικής Ελλάδας στο Euro 2004;",
+        "answer": "Otto Rehhagel",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Otto Rehhagel", "Fernando Santos"]
+      },
+      {
+        "id": "HIS-014",
+        "question": "Ποια ομάδα έχει κατακτήσει τα περισσότερα Euro μέχρι το 2024;",
+        "answer": "Spain",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Germany", "Spain"]
+      },
+      {
+        "id": "HIS-015",
+        "question": "Πόσες φορές έχει φτάσει η Ελλάδα σε τελική φάση Μουντιάλ;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-016",
+        "question": "Ποιος ήταν αρχηγός της Εθνικής Ελλάδας στο Euro 2004;",
+        "answer": "Theodoros Zagorakis",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Theodoros Zagorakis", "Angelos Basinas"]
+      },
+      {
+        "id": "HIS-017",
+        "question": "Πόσα Euro έχει κατακτήσει η Ισπανία μέχρι το 2024;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-018",
+        "question": "Ποιος παίκτης έχει σκοράρει τα περισσότερα γκολ σε μία σεζόν Champions League (μέχρι το 2024);",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Cristiano Ronaldo", "Robert Lewandowski"]
+      },
+      {
+        "id": "HIS-019",
+        "question": "Ποιος παίκτης έχει τις περισσότερες συμμετοχές με την Εθνική Ελλάδας;",
+        "answer": "Giorgos Karagounis",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Giorgos Karagounis", "Theodoros Zagorakis"]
+      },
+      {
+        "id": "HIS-020",
+        "question": "Πόσες φορές έχει φτάσει η Ελλάδα στα νοκ-άουτ του Euro (μέχρι το 2024);",
+        "answer": 1,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [1, 2]
+      },
+      {
+        "id": "HIS-031",
+        "question": "Ποιος είναι ο μόνος τερματοφύλακας που έχει κερδίσει τη Χρυσή Μπάλα;",
+        "answer": "Lev Yashin",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Lev Yashin", "Oliver Kahn"]
+      },
+      {
+        "id": "HIS-034",
+        "question": "Ποιος ποδοσφαιριστής έχει τις περισσότερες συμμετοχές στην ιστορία του Champions League;",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Cristiano Ronaldo", "Iker Casillas"]
+      },
+      {
+        "id": "HIS-036",
+        "question": "Πόσους τίτλους Champions League έχει κατακτήσει ως προπονητής ο Ζινεντίν Ζιντάν;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [3, 2]
+      },
+      {
+        "id": "HIS-039",
+        "question": "Ποιος προπονητής έχει κατακτήσει τους περισσότερους τίτλους Premier League;",
+        "answer": "Sir Alex Ferguson",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Sir Alex Ferguson", "Arsène Wenger"]
+      },
+      {
+        "id": "HIS-042",
+        "question": "Ποια χώρα διοργάνωσε το Μουντιάλ του 2018;",
+        "answer": "Ρωσία",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Ρωσία", "Βραζιλία"]
+      },
+      {
+        "id": "HIS-049",
+        "question": "Ποια εθνική ομάδα έχει το παρατσούκλι 'La Furia Roja';",
+        "answer": "Ισπανία",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Ισπανία", "Ιταλία"]
+      },
+      {
+        "id": "HIS-050",
+        "question": "Ποιος παίκτης έχει κατακτήσει το Champions League με τρεις διαφορετικές ομάδες;",
+        "answer": "Clarence Seedorf",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Clarence Seedorf", "Cristiano Ronaldo"]
+      },
+      {
+        "id": "HIS-051",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2005–06;",
+        "answer": "Barcelona",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Barcelona", "Arsenal"]
+      },
+      {
+        "id": "HIS-052",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2006–07;",
+        "answer": "Milan",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Milan", "Liverpool"]
+      },
+      {
+        "id": "HIS-053",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2007–08;",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Manchester United", "Chelsea"]
+      },
+      {
+        "id": "HIS-054",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2008–09;",
+        "answer": "Barcelona",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Barcelona", "Manchester United"]
+      },
+      {
+        "id": "HIS-055",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2009–10;",
+        "answer": "Inter Milan",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Inter Milan", "Bayern Munich"]
+      },
+      {
+        "id": "HIS-056",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2010–11;",
+        "answer": "Barcelona",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Barcelona", "Manchester United"]
+      },
+      {
+        "id": "HIS-057",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2011–12;",
+        "answer": "Chelsea",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Chelsea", "Bayern Munich"]
+      },
+      {
+        "id": "HIS-058",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2012–13;",
+        "answer": "Bayern Munich",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Bayern Munich", "Borussia Dortmund"]
+      },
+      {
+        "id": "HIS-059",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2013–14;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Atlético Madrid"]
+      },
+      {
+        "id": "HIS-060",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2014–15;",
+        "answer": "Barcelona",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Barcelona", "Juventus"]
+      },
+      {
+        "id": "HIS-061",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2015–16;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Atlético Madrid"]
+      },
+      {
+        "id": "HIS-062",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2016–17;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Juventus"]
+      },
+      {
+        "id": "HIS-063",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2017–18;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Liverpool"]
+      },
+      {
+        "id": "HIS-064",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2018–19;",
+        "answer": "Liverpool",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Liverpool", "Tottenham Hotspur"]
+      },
+      {
+        "id": "HIS-065",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2019–20;",
+        "answer": "Bayern Munich",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Bayern Munich", "Paris Saint-Germain"]
+      },
+      {
+        "id": "HIS-066",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2020–21;",
+        "answer": "Chelsea",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Chelsea", "Manchester City"]
+      },
+      {
+        "id": "HIS-067",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2021–22;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Liverpool"]
+      },
+      {
+        "id": "HIS-068",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2022–23;",
+        "answer": "Manchester City",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Manchester City", "Inter Milan"]
+      },
+      {
+        "id": "HIS-069",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2023–24;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Real Madrid", "Borussia Dortmund"]
+      },
+      {
+        "id": "HIS-071",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2018–19;",
+        "answer": "Chelsea FC",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Chelsea FC", "Arsenal FC"]
+      },
+      {
+        "id": "HIS-072",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2019–20;",
+        "answer": "Sevilla FC",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Sevilla FC", "Inter Milan"]
+      },
+      {
+        "id": "HIS-073",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2020–21;",
+        "answer": "Villarreal CF",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Villarreal CF", "Manchester United"]
+      },
+      {
+        "id": "HIS-074",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2021–22;",
+        "answer": "Eintracht Frankfurt",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Eintracht Frankfurt", "Rangers FC"]
+      },
+      {
+        "id": "HIS-075",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2022–23;",
+        "answer": "Sevilla FC",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Sevilla FC", "AS Roma"]
+      },
+      {
+        "id": "HIS-076",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2023–24;",
+        "answer": "Atalanta BC",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Atalanta BC", "Bayer Leverkusen"]
+      },
+      {
+        "id": "HIS-077",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2024–25;",
+        "answer": "Tottenham Hotspur",
+        "answer_type": "team",
+        "points": 1,
+        "fifty_fifty": ["Tottenham Hotspur", "AS Roma"]
+      },
+      {
+        "id": "HIS-078",
+        "question": "Ποια χώρα έχει τις περισσότερες εμφανίσεις σε τελικούς Ευρωπαϊκού Πρωταθλήματος;",
+        "answer": "Γερμανία",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Γερμανία", "Ισπανία"]
+      },
+      {
+        "id": "HIS-079",
+        "question": "Ποιος βγήκε πολυτιμότερος παίκτης του EURO 2008;",
+        "answer": "Xavi",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Xavi", "Andrea Pirlo"]
+      },
+      {
+        "id": "HIS-080",
+        "question": "Ποιος ήταν πρώτος σκόρερ του Champions League τη σεζόν 2021–22;",
+        "answer": "Karim Benzema",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Karim Benzema", "Erling Haaland"]
+      },
+      {
+        "id": "HIS-081",
+        "question": "Πόσες ευρωπαϊκές χώρες έχουν κατακτήσει Μουντιάλ;",
+        "answer": 5,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [5, 4]
+      },
+      {
+        "id": "HIS-082",
+        "question": "Ποια χώρα αντικατέστησε η Δανία στο EURO του 1992 το οποίο στη συνέχεια κατέκτησε;",
+        "answer": "Yugoslavia",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Yugoslavia", "Scotland"]
+      },
+      {
+        "id": "HIS-083",
+        "question": "Ποιος είναι ο πρώτος σε συμμετοχές στην ιστορία του Παναθηναϊκού;",
+        "answer": "Mimis Domazos",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Mimis Domazos", "Kostas Frantzeskos"]
+      },
+      {
+        "id": "HIS-084",
+        "question": "Με πόσες ομάδες έχει πάει σε τελικό Κυπέλλου ο Ντούσαν Μπάγεβιτς;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-085",
+        "question": "Ποια χώρα έχει τις περισσότερες κατακτήσεις UEFA/Europa League;",
+        "answer": "Spain",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Spain", "England"]
+      },
+      {
+        "id": "HIS-086",
+        "question": "Ποια χρονιά άλλαξε μορφή το EURO από 16 σε 24 ομάδες;",
+        "answer": 2016,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [2016, 2012]
+      }
+    ],
+    "X2": [
+      {
+        "id": "HIS-990",
+        "question": "Ποιος είναι ο πιο νέος σκόρερ σε τελικό Μουντιάλ;",
+        "answer": "Pelé",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Pelé", "Kylian Mbappé"]
+      },
+      {
+        "id": "HIS-991",
+        "question": "Πόσες φορές έχει κατακτήσει το Champions League η Μπάγερν Μονάχου μέχρι το 2024;",
+        "answer": 6,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [6, 5]
+      },
+      {
+        "id": "HIS-992",
+        "question": "Ποιος παίκτης κατέχει το ρεκόρ περισσότερων ασίστ σε μία σεζόν Premier League;",
+        "answer": "Kevin De Bruyne",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Kevin De Bruyne", "Thierry Henry"]
+      },
+      {
+        "id": "HIS-993",
+        "question": "Πόσα γκολ πέτυχε συνολικά ο Γκερντ Μίλερ σε μία σεζόν Bundesliga (ρεκόρ);",
+        "answer": 40,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [40, 38]
+      },
+      {
+        "id": "HIS-994",
+        "question": "Ποιος τερματοφύλακας έχει τα περισσότερα clean sheets στην Premier League;",
+        "answer": "Petr Čech",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Petr Čech", "David Seaman"]
+      },
+      {
+        "id": "HIS-995",
+        "question": "Πόσες φορές έχει κατακτήσει το Copa América η Αργεντινή μέχρι το 2024;",
+        "answer": 15,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [15, 14]
+      },
+      {
+        "id": "HIS-996",
+        "question": "Ποιος ποδοσφαιριστής έχει σκοράρει σε περισσότερα συνεχόμενα ματς Premier League;",
+        "answer": "Jamie Vardy",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Jamie Vardy", "Ruud van Nistelrooy"]
+      },
+      {
+        "id": "HIS-997",
+        "question": "Πόσες φορές έχει κερδίσει το Ballon d'Or ο Κριστιάνο Ρονάλντο μέχρι το 2024;",
+        "answer": 5,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [5, 4]
+      },
+      {
+        "id": "HIS-998",
+        "question": "Ποιος ποδοσφαιριστής έχει τις περισσότερες εμφανίσεις με την Εθνική Γερμανίας;",
+        "answer": "Lothar Matthäus",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Lothar Matthäus", "Miroslav Klose"]
+      },
+      {
+        "id": "HIS-030",
+        "question": "Πόσα γκολ συνολικά πέτυχε ο Ντιέγκο Μαραντόνα σε Παγκόσμια Κύπελλα;",
+        "answer": 8,
+        "answer_type": "number",
+        "points": 1,
+        "fifty_fifty": [8, 10]
+      },
+      {
+        "id": "HIS-1000",
+        "question": "Ποιος ποδοσφαιριστής κέρδισε το Χρυσό Παπούτσι (Golden Boot) στο EURO 2008;",
+        "answer": "David Villa",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["David Villa", "Fernando Torres"]
+      },
+      {
+        "id": "HIS-1001",
+        "question": "Ποια ομάδα κατέκτησε το πρώτο UEFA Champions League (1992–93);",
+        "answer": "Olympique de Marseille",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Olympique de Marseille", "AC Milan"]
+      },
+      {
+        "id": "HIS-1002",
+        "question": "Ποιος προπονητής έχει κατακτήσει το Champions League με δύο διαφορετικές ομάδες (Porto & Inter);",
+        "answer": "José Mourinho",
+        "answer_type": "coach",
+        "points": 2,
+        "fifty_fifty": ["José Mourinho", "Carlo Ancelotti"]
+      },
+      {
+        "id": "HIS-1003",
+        "question": "Ποια χώρα φιλοξένησε το Παγκόσμιο Κύπελλο του 1990;",
+        "answer": "Ιταλία",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Ιταλία", "Αγγλία"]
+      },
+      {
+        "id": "HIS-1005",
+        "question": "Ποια ομάδα έχει το ρεκόρ συνεχόμενων τίτλων στο FIFA Club World Cup (2016–2019);",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "Barcelona"]
+      },
+      {
+        "id": "HIS-1006",
+        "question": "Ποιος ποδοσφαιριστής κέρδισε το Χρυσό Παπούτσι του Champions League τη σεζόν 2013–14;",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Cristiano Ronaldo", "Karim Benzema"]
+      },
+      {
+        "id": "HIS-1014",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 1996–97;",
+        "answer": "Borussia Dortmund",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Borussia Dortmund", "Juventus"]
+      },
+      {
+        "id": "HIS-1015",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 1997–98;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "Juventus"]
+      },
+      {
+        "id": "HIS-1016",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 1998–99;",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester United", "Bayern Munich"]
+      },
+      {
+        "id": "HIS-1017",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 1999–00;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "Valencia"]
+      },
+      {
+        "id": "HIS-1018",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2000–01;",
+        "answer": "Bayern Munich",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Bayern Munich", "Real Madrid"]
+      },
+      {
+        "id": "HIS-1019",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2001–02;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "Bayer Leverkusen"]
+      },
+      {
+        "id": "HIS-1020",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2002–03;",
+        "answer": "AC Milan",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["AC Milan", "Juventus"]
+      },
+      {
+        "id": "HIS-1021",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2003–04;",
+        "answer": "FC Porto",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Porto", "AS Monaco"]
+      },
+      {
+        "id": "HIS-1022",
+        "question": "Ποια ομάδα κατέκτησε το Champions League τη σεζόν 2004–05;",
+        "answer": "Liverpool FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Liverpool FC", "AC Milan"]
+      },
+      {
+        "id": "HIS-1023",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2010–11;",
+        "answer": "FC Porto",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Porto", "Bayer Leverkusen"]
+      },
+      {
+        "id": "HIS-1024",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2011–12;",
+        "answer": "Atlético de Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Atlético de Madrid", "Athletic Bilbao"]
+      },
+      {
+        "id": "HIS-1025",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2012–13;",
+        "answer": "Chelsea FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Chelsea FC", "SL Benfica"]
+      },
+      {
+        "id": "HIS-1026",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2013–14;",
+        "answer": "Sevilla FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Sevilla FC", "SL Benfica"]
+      },
+      {
+        "id": "HIS-1027",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2014–15;",
+        "answer": "Sevilla FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Sevilla FC", "Dněpr Dněpropetrovsk"]
+      },
+      {
+        "id": "HIS-1028",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2015–16;",
+        "answer": "Sevilla FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Sevilla FC", "Shakhtar Donetsk"]
+      },
+      {
+        "id": "HIS-1029",
+        "question": "Ποια ομάδα κατέκτησε το Europa League τη σεζόν 2016–17;",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester United", "Ajax"]
+      },
+      {
+        "id": "HIS-1030",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2009–10;",
+        "answer": "Chelsea FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Chelsea FC", "Manchester United"]
+      },
+      {
+        "id": "HIS-1031",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2010–11;",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester United", "Chelsea FC"]
+      },
+      {
+        "id": "HIS-1032",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2011–12;",
+        "answer": "Manchester City",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester City", "Manchester United"]
+      },
+      {
+        "id": "HIS-1033",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2012–13;",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester United", "Manchester City"]
+      },
+      {
+        "id": "HIS-1034",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2013–14;",
+        "answer": "Manchester City",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester City", "Liverpool FC"]
+      },
+      {
+        "id": "HIS-1035",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2014–15;",
+        "answer": "Chelsea FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Chelsea FC", "Manchester City"]
+      },
+      {
+        "id": "HIS-1036",
+        "question": "Ποια ομάδα κατέκτησε την Premier League τη σεζόν 2015–16;",
+        "answer": "Leicester City",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Leicester City", "Arsenal FC"]
+      },
+      {
+        "id": "HIS-1037",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2013–14;",
+        "answer": "Atlético de Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Atlético de Madrid", "Real Madrid"]
+      },
+      {
+        "id": "HIS-1038",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2014–15;",
+        "answer": "FC Barcelona",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Barcelona", "Real Madrid"]
+      },
+      {
+        "id": "HIS-1039",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2015–16;",
+        "answer": "FC Barcelona",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Barcelona", "Atlético de Madrid"]
+      },
+      {
+        "id": "HIS-1040",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2016–17;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "FC Barcelona"]
+      },
+      {
+        "id": "HIS-1041",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2017–18;",
+        "answer": "FC Barcelona",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Barcelona", "Atlético de Madrid"]
+      },
+      {
+        "id": "HIS-1042",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2018–19;",
+        "answer": "FC Barcelona",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["FC Barcelona", "Real Madrid"]
+      },
+      {
+        "id": "HIS-1043",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2019–20;",
+        "answer": "Real Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Real Madrid", "FC Barcelona"]
+      },
+      {
+        "id": "HIS-1044",
+        "question": "Ποια ομάδα κατέκτησε τη La Liga τη σεζόν 2020–21;",
+        "answer": "Atlético de Madrid",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Atlético de Madrid", "Real Madrid"]
+      },
+      {
+        "id": "HIS-1045",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 1978;",
+        "answer": "Argentina",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Argentina", "Germany"]
+      },
+      {
+        "id": "HIS-1046",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 1982;",
+        "answer": "Italy",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Spain", "Italy"]
+      },
+      {
+        "id": "HIS-1047",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 1986;",
+        "answer": "Mexico",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Mexico", "Argentina"]
+      },
+      {
+        "id": "HIS-1048",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 1994;",
+        "answer": "United States",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["United States", "Brazil"]
+      },
+      {
+        "id": "HIS-1049",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 1998;",
+        "answer": "France",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["France", "Brazil"]
+      },
+      {
+        "id": "HIS-1050",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 2002;",
+        "answer": "Brazil",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Brazil", "Germany"]
+      },
+      {
+        "id": "HIS-1051",
+        "question": "Ποια χώρα κατέκτησε το Παγκόσμιο Κύπελλο του 2006;",
+        "answer": "Italy",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Italy", "France"]
+      },
+      {
+        "id": "HIS-1052",
+        "question": "Ποια χώρα κατέκτησε το EURO το 1992;",
+        "answer": "Δανία",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Δανία", "Γερμανία"]
+      },
+      {
+        "id": "HIS-1053",
+        "question": "Ποια χώρα κατέκτησε το EURO το 1996;",
+        "answer": "Γερμανία",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Γερμανία", "Τσεχία"]
+      },
+      {
+        "id": "HIS-1054",
+        "question": "Ποια χώρα κατέκτησε το EURO το 2000;",
+        "answer": "Γαλλία",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Γαλλία", "Ιταλία"]
+      },
+      {
+        "id": "HIS-1056",
+        "question": "Ποια χώρα κατέκτησε το EURO το 2008;",
+        "answer": "Ισπανία",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Ισπανία", "Γερμανία"]
+      },
+      {
+        "id": "HIS-1057",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 1997;",
+        "answer": "Ronaldo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Ronaldo", "Rivaldo"]
+      },
+      {
+        "id": "HIS-1058",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 1998;",
+        "answer": "Zinedine Zidane",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Zinedine Zidane", "Ronaldo"]
+      },
+      {
+        "id": "HIS-1059",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 1999;",
+        "answer": "Rivaldo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Rivaldo", "Ronaldo"]
+      },
+      {
+        "id": "HIS-1060",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2000;",
+        "answer": "Luís Figo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Luís Figo", "Zinedine Zidane"]
+      },
+      {
+        "id": "HIS-1061",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2001;",
+        "answer": "Michael Owen",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Michael Owen", "Raúl"]
+      },
+      {
+        "id": "HIS-1062",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2002;",
+        "answer": "Ronaldo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Ronaldo", "Luís Figo"]
+      },
+      {
+        "id": "HIS-1063",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2003;",
+        "answer": "Pavel Nedvěd",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Pavel Nedvěd", "Andriy Shevchenko"]
+      },
+      {
+        "id": "HIS-1064",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2004;",
+        "answer": "Andriy Shevchenko",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Andriy Shevchenko", "Pavel Nedvěd"]
+      },
+      {
+        "id": "HIS-1065",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2005;",
+        "answer": "Ronaldinho",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Ronaldinho", "Kaká"]
+      },
+      {
+        "id": "HIS-1066",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2006;",
+        "answer": "Fabio Cannavaro",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Fabio Cannavaro", "Andriy Shevchenko"]
+      },
+      {
+        "id": "HIS-1067",
+        "question": "Ποιος κέρδισε το Ballon d'Or το 2007;",
+        "answer": "Kaká",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Kaká", "Cristiano Ronaldo"]
+      },
+      {
+        "id": "HIS-1068",
+        "question": "Ποιος παίκτης σημείωσε το ταχύτερο χατ‑τρικ στην ιστορία της Premier League;",
+        "answer": "Sadio Mané",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Sadio Mané", "Thierry Henry"]
+      },
+      {
+        "id": "HIS-1069",
+        "question": "Με 260 γκολ, ποιος είναι ο κορυφαίος σκόρερ όλων των εποχών στην Premier League;",
+        "answer": "Alan Shearer",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Alan Shearer", "Wayne Rooney"]
+      },
+      {
+        "id": "HIS-1070",
+        "question": "Ποια ομάδα κέρδισε τον πρώτο τίτλο της Premier League (1992–93);",
+        "answer": "Manchester United",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Manchester United", "Arsenal"]
+      },
+      {
+        "id": "HIS-1071",
+        "question": "Με 202 clean sheets, ποιος τερματοφύλακας έχει το καλύτερο ρεκόρ στην Premier League;",
+        "answer": "Petr Čech",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Petr Čech", "David James"]
+      },
+      {
+        "id": "HIS-1072",
+        "question": "Το ταχύτερο γκολ στην ιστορία της Premier League ήρθε στα 7,69 δευτερόλεπτα. Ποιος το πέτυχε;",
+        "answer": "Shane Long",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Shane Long", "Ledley King"]
+      },
+      {
+        "id": "HIS-1073",
+        "question": "Ποια χώρα κέρδισε το πρώτο Παγκόσμιο Κύπελλο το 1930;",
+        "answer": "Uruguay",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Uruguay", "Argentina"]
+      },
+      {
+        "id": "HIS-1074",
+        "question": "Ποια χώρα έχει εμφανιστεί σε τρεις τελικούς Παγκοσμίου Κυπέλλου, αλλά ποτέ δεν τον κέρδισε;",
+        "answer": "Netherlands",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Netherlands", "Croatia"]
+      },
+      {
+        "id": "HIS-1075",
+        "question": "Ο ρεκόρ σκόρερ σε Παγκόσμια Κύπελλα με 16 γκολ είναι ποιος;",
+        "answer": "Miroslav Klose",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Miroslav Klose", "Ronaldo"]
+      },
+      {
+        "id": "HIS-1076",
+        "question": "Ο Messi ξεκίνησε την επαγγελματική του καριέρα στη Barcelona, αλλά ποια ήταν η σχολική του ομάδα;",
+        "answer": "Newell’s Old Boys",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Newell’s Old Boys", "River Plate"]
+      },
+      {
+        "id": "HIS-1077",
+        "question": "Ποια ήταν η πρώτη ομάδα από το Ηνωμένο Βασίλειο που κέρδισε το Κύπελλο Πρωταθλητριών;",
+        "answer": "Celtic FC",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Celtic FC", "Manchester United"]
+      },
+      {
+        "id": "HIS-1078",
+        "question": "Το Champions League έχει κατακτηθεί μόνο μία φορά από ομάδα της Ρουμανίας. Μπορείτε να την ονομάσετε;",
+        "answer": "Steaua București",
+        "answer_type": "team",
+        "points": 2,
+        "fifty_fifty": ["Steaua București", "Dinamo București"]
+      }
+    ],
+    "X3": [
+      {
+        "id": "HIS-2000",
+        "question": "Ποιος ποδοσφαιριστής έχει τις περισσότερες συμμετοχές στην ιστορία της εθνικής Αγγλίας;",
+        "answer": "Peter Shilton",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Peter Shilton", "Wayne Rooney"]
+      },
+      {
+        "id": "HIS-2001",
+        "question": "Ποιος ποδοσφαιριστής κατέχει το ρεκόρ των περισσότερων γκολ σε μία μόνο διοργάνωση Παγκοσμίου Κυπέλλου (13 γκολ το 1958);",
+        "answer": "Just Fontaine",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Just Fontaine", "Miroslav Klose"]
+      },
+      {
+        "id": "HIS-2002",
+        "question": "Ποιος ήταν ο νεότερος προπονητής που κατέκτησε το Champions League (36 ετών το 1958);",
+        "answer": "José Villalonga",
+        "answer_type": "coach",
+        "points": 3,
+        "fifty_fifty": ["José Villalonga", "Pep Guardiola"]
+      },
+      {
+        "id": "HIS-2005",
+        "question": "Ποια ήταν η πρώτη ομάδα εκτός Ευρώπης που κέρδισε το Διηπειρωτικό Κύπελλο (Intercontinental Cup);",
+        "answer": "Peñarol",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Peñarol", "Santos FC"]
+      },
+      {
+        "id": "HIS-2007",
+        "question": "Ποιος σημείωσε το πρώτο χατ‑τρικ σε τελικό Παγκοσμίου Κυπέλλου;",
+        "answer": "Geoff Hurst",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Geoff Hurst", "Pelé"]
+      },
+      {
+        "id": "HIS-2009",
+        "question": "Ποιος είναι ο γηραιότερος σκόρερ σε αγώνα Παγκοσμίου Κυπέλλου (42 ετών);",
+        "answer": "Roger Milla",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Roger Milla", "Essam El Hadary"]
+      },
+      {
+        "id": "HIS-2010",
+        "question": "Ποιος είναι ο μοναδικός προπονητής που έχει κατακτήσει το Champions League και το Παγκόσμιο Κύπελλο ως προπονητής;",
+        "answer": "Vicente del Bosque",
+        "answer_type": "coach",
+        "points": 3,
+        "fifty_fifty": ["Vicente del Bosque", "Carlo Ancelotti"]
+      },
+      {
+        "id": "HIS-2011",
+        "question": "Ποιος παίκτης πέτυχε τα περισσότερα γκολ σε έναν τελικό Ευρωπαϊκού Πρωταθλητριών (3 γκολ το 1969);",
+        "answer": "Pierino Prati",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Pierino Prati", "Alfredo Di Stéfano"]
+      },
+      {
+        "id": "HIS-2012",
+        "question": "Ποια χώρα έχει τους περισσότερους «εμφύλιους» τελικούς στο Europa League/Κύπελλο ΟΥΕΦΑ (1971–σήμερα);",
+        "answer": "Italy",
+        "answer_type": "country",
+        "points": 3,
+        "fifty_fifty": ["Spain", "Italy"]
+      },
+      {
+        "id": "HIS-2013",
+        "question": "Πόσες ομάδες έχουν κατακτήσει το πρωτάθλημα στην Κύπρο;",
+        "answer": 12,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [10, 12]
+      },
+      {
+        "id": "HIS-2014",
+        "question": "Ποια ομάδα έχει αγωνιστεί τις περισσότερες σεζόν στο Europa League/Κύπελλο UEFA;",
+        "answer": "Ajax",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Sevilla FC", "Ajax"]
+      },
+      {
+        "id": "HIS-2015",
+        "question": "Ποια ομάδα έχει δεχτεί τις περισσότερες ήττες στην ιστορία της Serie A;",
+        "answer": "Lacio FC",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Lacio FC", "Torino FC"]
+      },
+      {
+        "id": "HIS-2016",
+        "question": "Ο τελικός του EURO 2000 μεταξύ Γαλλίας και Ιταλίας κρίθηκε με Χρυσό Γκολ. Ποιος παίκτης το πέτυχε;",
+        "answer": "David Trezeguet",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["David Trezeguet", "Zinedine Zidane"]
+      },
+      {
+        "id": "HIS-2017",
+        "question": "Μόνο ένα πρόσωπο έχει κατακτήσει το Ευρωπαϊκό Πρωτάθλημα ως παίκτης και ως προπονητής. Μπορείτε να το ονομάσετε;",
+        "answer": "Berti Vogts",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Didier Deschamps", "Berti Vogts"]
+      },
+      {
+        "id": "HIS-2018",
+        "question": "Μετά τη Juventus, την AC Milan και την Inter (9 Scudetti), ποια ομάδα έχει κερδίσει τους περισσότερους τίτλους Serie A;",
+        "answer": "Genoa CFC",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Genoa CFC", "Torino FC"]
+      },
+      {
+        "id": "HIS-2019",
+        "question": "Ποιος είναι ο νεότερος παίκτης που έχει αγωνιστεί ως αρχηγός σε αγώνα Champions League;",
+        "answer": "Rúben Neves",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Rúben Neves", "Rafael van der Vaart"]
+      },
+      {
+        "id": "HIS-2020",
+        "question": "Ποιος αμυντικός πέτυχε τα περισσότερα γκολ μέσα στο 2024 (στα κορυφαία 100 πρωταθλήματα);",
+        "answer": "Baba Rahman",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Baba Rahman", "Alphonso Davies"]
+      },
+      {
+        "id": "HIS-2021",
+        "question": "Ποια ομάδα έχει κατακτήσει τις περισσότερες φορές τον τίτλο στη 2η κατηγορία της Αγγλίας (σημερινή Championship);",
+        "answer": "Leicester City",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["West Bromwich Albion", "Leicester City"]
+      },
+      {
+        "id": "HIS-2022",
+        "question": "Ποιος ήταν ο πρώτος Αφρικανός που αναδείχθηκε κορυφαίος σκόρερ στην ιστορία της Bundesliga;",
+        "answer": "Anthony Yeboah",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Anthony Yeboah", "Okocha"]
+      },
+      {
+        "id": "HIS-2023",
+        "question": "Πόσα πρωταθλήματα Αγγλίας έχει κατακτήσει η Έβερτον;",
+        "answer": 9,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [9, 8]
+      },
+      {
+        "id": "HIS-2025",
+        "question": "Πόσους τίτλους έχει η Aston Villa στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 7,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [7, 6]
+      },
+      {
+        "id": "HIS-2026",
+        "question": "Πόσους τίτλους έχει η Chelsea FC στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 6,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [6, 7]
+      },
+      {
+        "id": "HIS-2027",
+        "question": "Πόσους τίτλους έχει η Sunderland AFC στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 6,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [6, 5]
+      },
+      {
+        "id": "HIS-2028",
+        "question": "Πόσους τίτλους έχει η Sheffield Wednesday στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [4, 3]
+      },
+      {
+        "id": "HIS-2029",
+        "question": "Πόσους τίτλους έχει η Newcastle United στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [4, 5]
+      },
+      {
+        "id": "HIS-2030",
+        "question": "Πόσους τίτλους έχει η Blackburn Rovers στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-2031",
+        "question": "Πόσους τίτλους έχει η Leeds United στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [3, 2]
+      },
+      {
+        "id": "HIS-2032",
+        "question": "Πόσους τίτλους έχει η Wolverhampton Wanderers στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [3, 2]
+      },
+      {
+        "id": "HIS-2033",
+        "question": "Πόσους τίτλους έχει η Huddersfield Town στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-2034",
+        "question": "Πόσους τίτλους έχει η Derby County στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 2,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [2, 3]
+      },
+      {
+        "id": "HIS-2035",
+        "question": "Πόσους τίτλους έχει η Tottenham Hotspur στην ιστορία της πρώτης κατηγορίας του αγγλικού ποδοσφαίρου;",
+        "answer": 2,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [2, 1]
+      },
+      {
+        "id": "HIS-2036",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Atlético de Madrid στη 1η κατηγορία της Ισπανίας;",
+        "answer": 11,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [11, 10]
+      },
+      {
+        "id": "HIS-2037",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Athletic Bilbao στη 1η κατηγορία της Ισπανίας;",
+        "answer": 8,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [8, 7]
+      },
+      {
+        "id": "HIS-2038",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Valencia CF στη 1η κατηγορία της Ισπανίας;",
+        "answer": 6,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [6, 5]
+      },
+      {
+        "id": "HIS-2039",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Real Sociedad στη 1η κατηγορία της Ισπανίας;",
+        "answer": 2,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [2, 3]
+      },
+      {
+        "id": "HIS-2040",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Torino FC στη Serie A;",
+        "answer": 7,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [7, 6]
+      },
+      {
+        "id": "HIS-2041",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Bologna FC 1909 στη Serie A;",
+        "answer": 7,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [7, 8]
+      },
+      {
+        "id": "HIS-2042",
+        "question": "Πόσους τίτλους έχει κατακτήσει η FC Pro Vercelli 1892 στη Serie A;",
+        "answer": 7,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [7, 6]
+      },
+      {
+        "id": "HIS-2043",
+        "question": "Πόσους τίτλους έχει κατακτήσει η SSC Napoli στη Serie A;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [4, 5]
+      },
+      {
+        "id": "HIS-2044",
+        "question": "Πόσους τίτλους έχει κατακτήσει η AS Roma στη Serie A;",
+        "answer": 3,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [3, 4]
+      },
+      {
+        "id": "HIS-2045",
+        "question": "Πόσους τίτλους έχει κατακτήσει η SS Lazio στη Serie A;",
+        "answer": 2,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [2, 3]
+      },
+      {
+        "id": "HIS-2046",
+        "question": "Πόσους τίτλους έχει κατακτήσει η ACF Fiorentina στη Serie A;",
+        "answer": 2,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [2, 1]
+      },
+      {
+        "id": "HIS-2047",
+        "question": "Πόσους τίτλους έχει κατακτήσει η 1. FC Nuremberg στη Bundesliga;",
+        "answer": 9,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [9, 8]
+      },
+      {
+        "id": "HIS-2048",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Borussia Dortmund στη Bundesliga;",
+        "answer": 8,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [8, 7]
+      },
+      {
+        "id": "HIS-2049",
+        "question": "Πόσους τίτλους έχει κατακτήσει η FC Schalke 04 στη Bundesliga;",
+        "answer": 7,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [7, 6]
+      },
+      {
+        "id": "HIS-2050",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Hamburger SV στη Bundesliga;",
+        "answer": 6,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [6, 7]
+      },
+      {
+        "id": "HIS-2051",
+        "question": "Πόσους τίτλους έχει κατακτήσει η VfB Stuttgart στη Bundesliga;",
+        "answer": 5,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [5, 4]
+      },
+      {
+        "id": "HIS-2052",
+        "question": "Πόσους τίτλους έχει κατακτήσει η Borussia Mönchengladbach στη Bundesliga;",
+        "answer": 5,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [5, 6]
+      },
+      {
+        "id": "HIS-2053",
+        "question": "Πόσους τίτλους έχει κατακτήσει η SV Werder Bremen στη Bundesliga;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [4, 3]
+      },
+      {
+        "id": "HIS-2054",
+        "question": "Πόσους τίτλους έχει κατακτήσει η 1. FC Kaiserslautern στη Bundesliga;",
+        "answer": 4,
+        "answer_type": "number",
+        "points": 3,
+        "fifty_fifty": [4, 5]
+      }
+    ]
+  },
+
+  "geography": {
+    "X1": [
+      {
+        "id": "GEO-001",
+        "question": "Σε ποια χώρα βρίσκεται το στάδιο Maracanã;",
+        "answer": "Brazil",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Brazil", "Argentina"]
+      },
+      {
+        "id": "GEO-002",
+        "question": "Ποια πόλη είναι η έδρα της ομάδας FC Barcelona;",
+        "answer": "Barcelona",
+        "answer_type": "city",
+        "points": 1,
+        "fifty_fifty": ["Barcelona", "Madrid"]
+      },
+      {
+        "id": "GEO-003",
+        "question": "Σε ποια χώρα βρίσκεται η ομάδα Bayern Munich;",
+        "answer": "Germany",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Germany", "Austria"]
+      },
+      {
+        "id": "GEO-004",
+        "question": "Ποια πόλη φιλοξενεί το στάδιο Old Trafford;",
+        "answer": "Manchester",
+        "answer_type": "city",
+        "points": 1,
+        "fifty_fifty": ["Manchester", "London"]
+      },
+      {
+        "id": "GEO-005",
+        "question": "Σε ποια χώρα παίζει η ομάδα River Plate;",
+        "answer": "Argentina",
+        "answer_type": "country",
+        "points": 1,
+        "fifty_fifty": ["Argentina", "Chile"]
+      }
+    ],
+    "X2": [
+      {
+        "id": "GEO-006",
+        "question": "Ποια πόλη είναι η έδρα της ομάδας Ajax;",
+        "answer": "Amsterdam",
+        "answer_type": "city",
+        "points": 2,
+        "fifty_fifty": ["Amsterdam", "Rotterdam"]
+      },
+      {
+        "id": "GEO-007",
+        "question": "Σε ποια χώρα βρίσκεται η πόλη Κωνσταντινούπολη, όπου αγωνίζεται η Galatasaray;",
+        "answer": "Turkey",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Turkey", "Greece"]
+      },
+      {
+        "id": "GEO-008",
+        "question": "Ποια πόλη είναι γνωστή ως 'πόλη των καναλιών' και έχει την ομάδα FC Copenhagen;",
+        "answer": "Copenhagen",
+        "answer_type": "city",
+        "points": 2,
+        "fifty_fifty": ["Copenhagen", "Oslo"]
+      },
+      {
+        "id": "GEO-009",
+        "question": "Σε ποια χώρα βρίσκεται η ομάδα Al Ahly;",
+        "answer": "Egypt",
+        "answer_type": "country",
+        "points": 2,
+        "fifty_fifty": ["Egypt", "Morocco"]
+      },
+      {
+        "id": "GEO-010",
+        "question": "Ποια πόλη είναι η έδρα της ομάδας Red Star Belgrade;",
+        "answer": "Belgrade",
+        "answer_type": "city",
+        "points": 2,
+        "fifty_fifty": ["Belgrade", "Zagreb"]
+      }
+    ],
+    "X3": [
+      {
+        "id": "GEO-011",
+        "question": "Ποια είναι η πιο βόρεια ομάδα που αγωνίζεται στην πρώτη κατηγορία της Νορβηγίας;",
+        "answer": "Bodø/Glimt",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Bodø/Glimt", "Rosenborg"]
+      },
+      {
+        "id": "GEO-012",
+        "question": "Σε ποια χώρα βρίσκεται η πόλη Σουράμπαγια, που φιλοξενεί την ποδοσφαιρική ομάδα Persebaya Surabaya;",
+        "answer": "Indonesia",
+        "answer_type": "country",
+        "points": 3,
+        "fifty_fifty": ["Indonesia", "Malaysia"]
+      },
+      {
+        "id": "GEO-013",
+        "question": "Ποια πόλη είναι η πατρίδα της ομάδας Zenit Saint Petersburg;",
+        "answer": "Saint Petersburg",
+        "answer_type": "city",
+        "points": 3,
+        "fifty_fifty": ["Saint Petersburg", "Moscow"]
+      },
+      {
+        "id": "GEO-014",
+        "question": "Σε ποια χώρα βρίσκεται η πόλη Νταρ Ες Σαλάμ, με την ομάδα Young Africans SC;",
+        "answer": "Tanzania",
+        "answer_type": "country",
+        "points": 3,
+        "fifty_fifty": ["Tanzania", "Kenya"]
+      },
+      {
+        "id": "GEO-015",
+        "question": "Ποια ομάδα ποδοσφαίρου εδρεύει στη Σικάγο, ΗΠΑ;",
+        "answer": "Chicago Fire",
+        "answer_type": "team",
+        "points": 3,
+        "fifty_fifty": ["Chicago Fire", "LA Galaxy"]
+      }
+    ]
+  }
+}

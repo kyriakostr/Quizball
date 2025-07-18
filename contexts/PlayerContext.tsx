@@ -5,11 +5,19 @@ import { createContext, FC, PropsWithChildren, useState } from "react";
 
 export const player1DeafaultInfo: PlayerInfo = {
   playerId: PlayerId.PLAYER1ID,
+  help: {
+    fiftyFifty: false,
+    doublePoints: false,
+  },
   points: 0,
 };
 
 export const player2DeafaultInfo: PlayerInfo = {
   playerId: PlayerId.PLAYER2ID,
+  help: {
+    fiftyFifty: false,
+    doublePoints: false,
+  },
   points: 0,
 };
 

@@ -1,7 +1,7 @@
-import { Flags } from "./flag.enum";
-
 export type Question = {
   question: string;
   answer: string | number;
-  flag?: Flags;
+  points: number;
+  answer_type?: string;
+  fiftyFifty: string[] | number[];
 };
