@@ -4,17 +4,42 @@ import categoryPlaysMap from "@/types/category-plays.map";
 import { Category } from "@/types/category.enum";
 import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { useFocusEffect } from "@react-navigation/native";
 import React, { useEffect, useRef } from "react";
-import { Animated, Text } from "react-native";
+import { Alert, Animated, BackHandler, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
 import { QuizSelectionprops } from "../screenparams/ScreenParams";
-
 export default function QuizSelection({ navigation }: QuizSelectionprops) {
   const { currentPlayer, disableCategory } = usePlayerContext();
   const anim1 = useRef(new Animated.Value(0)).current;
   const anim2 = useRef(new Animated.Value(0)).current;
   const anim3 = useRef(new Animated.Value(0)).current;
+
+  useFocusEffect(() => {
+    const backAction = () => {
+      Alert.alert(
+        "Hold on!",
+        "Are you sure you want to go back?You are going to end the game",
+        [
+          {
+            text: "Cancel",
+            onPress: () => null,
+            style: "cancel",
+          },
+          { text: "YES", onPress: () => navigation.popToTop() },
+        ]
+      );
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      backAction
+    );
+
+    return () => backHandler.remove();
+  });
 
   useEffect(() => {
     Animated.stagger(250, [
@@ -40,7 +65,10 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
     <SafeAreaView style={quizSelectionStyles.view}>
       <Text style={quizSelectionStyles.title}>Select a category</Text>
       <Text style={quizSelectionStyles.playerTitle}>
-        Player {currentPlayer.playerId} Plays
+        {currentPlayer.playerId.toUpperCase()} Plays
+      </Text>
+      <Text style={quizSelectionStyles.playerTitle}>
+        {currentPlayer.points} Points
       </Text>
       <Animated.View
         style={{

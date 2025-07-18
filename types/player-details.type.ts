@@ -1,5 +1,5 @@
 import { Difficulty } from "./difficulty.enum";
 
-export interface PlayerDetails {
+export interface GameDetails {
   [key: string]: Difficulty[];
 }

@@ -35,9 +35,14 @@ export default function QuizDifficulty({
   }, []);
 
   const getQuestion = (difficulty: Difficulty) => {
-    return questionsMap[category]
-      .find((question) => question.difficulty === difficulty)
-      ?.questions.find((value, index) => index === 0);
+    const matchingCategory = questionsMap[category].find(
+      (question) => question.difficulty === difficulty
+    );
+    const randomQuestion =
+      matchingCategory?.questions[
+        Math.floor(Math.random() * matchingCategory.questions.length)
+      ];
+    return randomQuestion;
   };
   return (
     <SafeAreaView style={quizDifficultyStyles.view}>

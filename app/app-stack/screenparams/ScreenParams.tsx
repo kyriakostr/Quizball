@@ -5,6 +5,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 export type RootParamsList = {
   "app-stack/FirstScreen": undefined;
+  "app-stack/WinScreen": undefined;
   "app-stack/quizes/QuizSelection": undefined;
   "app-stack/quizes/QuizDifficulty": {
     difficultyArray: Difficulty[];
@@ -34,4 +35,8 @@ export type QuizDifficultyprops = NativeStackScreenProps<
 export type QuestionScreenprops = NativeStackScreenProps<
   RootParamsList,
   "app-stack/quizes/QuestionScreen"
+>;
+export type WinScreenprops = NativeStackScreenProps<
+  RootParamsList,
+  "app-stack/WinScreen"
 >;

@@ -1,16 +1,17 @@
+import { useBackHandler } from "@/hooks/useBackHandler";
+import { useGetInfo } from "@/hooks/useGetInfo";
 import { usePlayerContext } from "@/hooks/usePlayerContext";
-import { useEffect, useState } from "react";
+import { CommonActions } from "@react-navigation/native";
+import { useState } from "react";
 import {
-  Alert,
   Animated,
-  BackHandler,
-  Easing,
-  StyleSheet,
   Text,
   TextInput,
-  TouchableOpacity,
+  TouchableOpacity
 } from "react-native";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { questionScreenStyles } from "../app-stack-styles/QuestionScreen.styles";
 import { QuestionScreenprops } from "../screenparams/ScreenParams";
 
 export default function QuestionScreen({
@@ -20,192 +21,129 @@ export default function QuestionScreen({
   const [answer, setAnswer] = useState<string | number>();
   const [error, setError] = useState<string>("");
   const [correctAnswer, setCorrectAnswer] = useState<string>("");
-  const [shakeAnim] = useState(new Animated.Value(0));
-  const { setCurrentPlayerInfo, setNewCurrentPlayer } = usePlayerContext();
+
+  const {
+    setGameDetailsInfo,
+    setNewCurrentPlayer,
+    addPointsToPlayer,
+    endTheGame,
+  } = usePlayerContext();
   const { question, category, difficulty } = route.params;
-  useEffect(() => {
-    const backAction = () => {
-      if (error !== "" || correctAnswer !== "") {
-        Alert.alert(
-          "Hold on!",
-          "Are you sure you want to go back?You are going to end the game",
-          [
-            {
-              text: "Cancel",
-              onPress: () => null,
-              style: "cancel",
-            },
-            { text: "YES", onPress: () => navigation.popToTop() },
-          ]
-        );
-        return true;
-      }
-    };
-
-    const backHandler = BackHandler.addEventListener(
-      "hardwareBackPress",
-      backAction
-    );
-
-    return () => backHandler.remove();
-  }, [error, correctAnswer]);
-
-  const triggerShake = () => {
-    Animated.sequence([
-      Animated.timing(shakeAnim, {
-        toValue: 10,
-        duration: 50,
-        useNativeDriver: true,
-        easing: Easing.bounce,
-      }),
-      Animated.timing(shakeAnim, {
-        toValue: -10,
-        duration: 50,
-        useNativeDriver: true,
-      }),
-      Animated.timing(shakeAnim, {
-        toValue: 6,
-        duration: 50,
-        useNativeDriver: true,
-      }),
-      Animated.timing(shakeAnim, {
-        toValue: 0,
-        duration: 50,
-        useNativeDriver: true,
-      }),
-    ]).start();
-  };
+  useBackHandler(error, correctAnswer);
+  const { info, setSuggestionsArray, suggestions } = useGetInfo(question);
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.titleText}>
-        🎯 {question?.question ?? "Ready for a Challenge?"}
-      </Text>
+    <SafeAreaView style={questionScreenStyles.container}>
+      <KeyboardAwareScrollView
+        contentContainerStyle={questionScreenStyles.container}
+      >
+        <Text style={questionScreenStyles.titleText}>
+          🎯 {question?.question ?? "Ready for a Challenge?"}
+        </Text>
 
-      <TextInput
-        style={styles.input}
-        keyboardType={
-          typeof question?.answer === "number" ? "numeric" : "default"
-        }
-        placeholder="Your Answer"
-        placeholderTextColor="#aaa"
-        onChangeText={(text) => {
-          setAnswer(text.trimEnd());
-          setError("");
-          setCorrectAnswer("");
-        }}
-      />
-
-      <TouchableOpacity
-        style={[
-          styles.button,
-          (error !== "" || correctAnswer !== "") && styles.buttonDisabled,
-        ]}
-        activeOpacity={0.7}
-        disabled={error !== "" || correctAnswer !== ""}
-        onPress={() => {
-          if (answer != question?.answer) {
-            setCorrectAnswer("");
-            setError("🚫 Not the correct answer.");
-            triggerShake();
-            setCurrentPlayerInfo(category, difficulty);
-          } else {
-            setError("");
-            setCorrectAnswer("✅ Correct Answer! 🎊");
-            setCurrentPlayerInfo(category, difficulty);
+        <TextInput
+          style={questionScreenStyles.input}
+          keyboardType={
+            typeof question?.answer === "number" ? "numeric" : "default"
           }
-        }}
-      >
-        <Text style={styles.buttonText}>🎉 Submit</Text>
-      </TouchableOpacity>
+          value={answer?.toString()}
+          placeholder="Your Answer"
+          placeholderTextColor="#aaa"
+          onChangeText={(text) => {
+            setAnswer(text.trim());
+            setSuggestionsArray(text.trim());
+          }}
+        />
+        {answer !== "" &&
+          typeof answer === "string" &&
+          suggestions.length > 0 &&
+          !suggestions.includes(answer) && (
+            <Animated.View style={questionScreenStyles.suggestionList}>
+              {suggestions.map((s, i) => (
+                <TouchableOpacity
+                  key={`${s}-${i}`}
+                  style={questionScreenStyles.suggestionItem}
+                  activeOpacity={0.7}
+                  onPress={() => setAnswer(s.trim())}
+                >
+                  <Text style={questionScreenStyles.suggestionText}>{s}</Text>
+                </TouchableOpacity>
+              ))}
+            </Animated.View>
+          )}
 
-      {error !== "" && <Text style={styles.errorText}>{error}</Text>}
-      {correctAnswer !== "" && (
-        <Text style={styles.correctText}>{correctAnswer}</Text>
-      )}
+        <TouchableOpacity
+          style={[
+            questionScreenStyles.button,
+            (error !== "" || correctAnswer !== "") &&
+              questionScreenStyles.buttonDisabled,
+          ]}
+          activeOpacity={0.7}
+          disabled={error !== "" || correctAnswer !== ""}
+          onPress={() => {
+            if (answer != question?.answer) {
+              setCorrectAnswer("");
+              setError("🚫 Not the correct answer.");
+              setGameDetailsInfo(category, difficulty);
+              addPointsToPlayer(false, difficulty);
+            } else {
+              setError("");
+              setCorrectAnswer("✅ Correct Answer! 🎊");
+              setGameDetailsInfo(category, difficulty);
+              addPointsToPlayer(true, difficulty);
+            }
+          }}
+        >
+          <Text style={questionScreenStyles.buttonText}>🎉 Submit</Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        style={[
-          styles.nextButton,
-          error === "" && correctAnswer === "" && styles.buttonDisabled,
-        ]}
-        activeOpacity={0.7}
-        disabled={error === "" && correctAnswer === ""}
-        onPress={() => {
-          navigation.popTo("app-stack/quizes/QuizSelection");
-          setNewCurrentPlayer();
-        }}
-      >
-        <Text style={styles.buttonText}>➡️ Next Player</Text>
-      </TouchableOpacity>
+        {error !== "" && (
+          <Text style={questionScreenStyles.errorText}>{error}</Text>
+        )}
+        {correctAnswer !== "" && (
+          <Text style={questionScreenStyles.correctText}>{correctAnswer}</Text>
+        )}
+
+        {!endTheGame() && (
+          <TouchableOpacity
+            style={[
+              questionScreenStyles.nextButton,
+              error === "" &&
+                correctAnswer === "" &&
+                questionScreenStyles.buttonDisabled,
+            ]}
+            activeOpacity={0.7}
+            disabled={error === "" && correctAnswer === ""}
+            onPress={() => {
+              navigation.popTo("app-stack/quizes/QuizSelection");
+              setNewCurrentPlayer();
+            }}
+          >
+            <Text style={questionScreenStyles.buttonText}>➡️ Next Player</Text>
+          </TouchableOpacity>
+        )}
+        {endTheGame() && (
+          <TouchableOpacity
+            style={[questionScreenStyles.nextButton]}
+            activeOpacity={0.7}
+            onPress={() => {
+              navigation.dispatch(
+                CommonActions.reset({
+                  index: 1,
+                  routes: [
+                    { name: "app-stack/FirstScreen" },
+                    { name: "app-stack/WinScreen" }, // the target screen
+                  ],
+                })
+              );
+            }}
+          >
+            <Text style={questionScreenStyles.buttonText}>
+              ✅ End of the game
+            </Text>
+          </TouchableOpacity>
+        )}
+      </KeyboardAwareScrollView>
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#e0f7fa",
-    alignItems: "center",
-    justifyContent: "space-evenly",
-    padding: 20,
-  },
-  titleText: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "#333",
-    textAlign: "center",
-  },
-  input: {
-    height: 50,
-    width: 220,
-    borderColor: "#6200ea",
-    borderWidth: 2,
-    borderRadius: 14,
-    paddingHorizontal: 15,
-    fontSize: 18,
-    backgroundColor: "#fff",
-    color: "#333",
-  },
-  button: {
-    backgroundColor: "#7b1fa2",
-    paddingVertical: 14,
-    paddingHorizontal: 25,
-    borderRadius: 20,
-    shadowColor: "#000",
-    shadowOpacity: 0.3,
-    shadowOffset: { width: 2, height: 3 },
-    shadowRadius: 4,
-    elevation: 4,
-  },
-  nextButton: {
-    backgroundColor: "#009688",
-    paddingVertical: 14,
-    paddingHorizontal: 25,
-    borderRadius: 20,
-    shadowColor: "#000",
-    shadowOpacity: 0.3,
-    shadowOffset: { width: 2, height: 3 },
-    shadowRadius: 4,
-    elevation: 4,
-  },
-  buttonDisabled: {
-    opacity: 0.5,
-  },
-  buttonText: {
-    color: "white",
-    fontSize: 18,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  errorText: {
-    color: "red",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  correctText: {
-    color: "green",
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-});
