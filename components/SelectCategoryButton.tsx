@@ -4,20 +4,29 @@ import selectCategoryButtonStyles from "./component-styles/SelectCategoryButton.
 type SelectCategoryButtonProps = {
   color: string;
   text: string;
-  icon: any;
+  icon?: any;
+  disabled?: boolean;
+  onPress: () => void;
 };
 
 export default function SelectCategoryButton({
   color,
   text,
   icon,
+  disabled = false,
+  onPress,
 }: SelectCategoryButtonProps) {
   return (
     <TouchableOpacity
-      style={[selectCategoryButtonStyles.button, { backgroundColor: color }]}
+      onPress={onPress}
+      disabled={disabled}
+      style={[
+        selectCategoryButtonStyles.button,
+        { backgroundColor: !disabled ? color : "grey" },
+      ]}
     >
       <Text style={selectCategoryButtonStyles.text}>{text}</Text>
-      <View>{icon}</View>
+      {icon && <View>{icon}</View>}
     </TouchableOpacity>
   );
 }

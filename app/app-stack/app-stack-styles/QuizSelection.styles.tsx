@@ -8,6 +8,18 @@ const quizSelectionStyles = StyleSheet.create({
     backgroundColor: "#d0f0f2",
     gap: 20,
   },
+  playerTitle: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: "#1E90FF", // football blue
+    textShadowColor: "#000",
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
+    textAlign: "center",
+    paddingVertical: 10,
+    fontStyle: "italic",
+    letterSpacing: 1,
+  },
   title: {
     fontSize: 28,
     fontWeight: "600",
