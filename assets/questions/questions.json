@@ -93,7 +93,7 @@
         "id": "HIS-014",
         "question": "Ποια ομάδα έχει κατακτήσει τα περισσότερα Euro μέχρι το 2024;",
         "answer": "Spain",
-        "answer_type": "player",
+        "answer_type": "country",
         "points": 1,
         "fifty_fifty": ["Germany", "Spain"]
       },
@@ -181,7 +181,7 @@
         "id": "HIS-042",
         "question": "Ποια χώρα διοργάνωσε το Μουντιάλ του 2018;",
         "answer": "Ρωσία",
-        "answer_type": "player",
+        "answer_type": "country",
         "points": 1,
         "fifty_fifty": ["Ρωσία", "Βραζιλία"]
       },
@@ -1653,6 +1653,158 @@
         "answer_type": "team",
         "points": 3,
         "fifty_fifty": ["Chicago Fire", "LA Galaxy"]
+      }
+    ]
+  },
+  "player-missing": {
+    "X1": [
+      {
+        "id": "MP-001",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Τσέλσι(Τελικός Champions League 2021)",
+        "answer": "T. Werner",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["T. Werner", "Giroud"],
+        "image": "chelsea-champions-league-final-2021"
+      },
+      {
+        "id": "MP-002",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Ρεάλ Μαδρίτης (Τελικός Champions League 2018);",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Cristiano Ronaldo", "Benzema"],
+        "image": "real-madrid-ucl-2018"
+      },
+      {
+        "id": "MP-003",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Μπαρτσελόνα (Τελικός Champions League 2015);",
+        "answer": "Luis Suárez",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Luis Suárez", "Pedro"],
+        "image": "barcelona-ucl-2015"
+      },
+      {
+        "id": "MP-004",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Γαλλίας (Τελικός Παγκοσμίου Κυπέλλου 2018);",
+        "answer": "Pogba",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Pogba", "Kanté"],
+        "image": "france-world-cup-2018"
+      },
+      {
+        "id": "MP-005",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Ισπανίας (Τελικός Euro 2012);",
+        "answer": "Fernando Torres",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Fernando Torres", "David Silva"],
+        "image": "spain-euro-2012"
+      },
+      {
+        "id": "MP-006",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Μάντσεστερ Σίτι (Πρωτάθλημα 2022);",
+        "answer": "Kevin De Bruyne",
+        "answer_type": "player",
+        "points": 1,
+        "fifty_fifty": ["Kevin De Bruyne", "Foden"],
+        "image": "man-city-2022"
+      }
+    ],
+    "X2": [
+      {
+        "id": "MP-007",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Γερμανίας (Τελικός Παγκοσμίου Κυπέλλου 2014);",
+        "answer": "Miroslav Klose",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Miroslav Klose", "Götze"],
+        "image": "germany-world-cup-2014"
+      },
+      {
+        "id": "MP-008",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Ιταλίας (Τελικός Euro 2020);",
+        "answer": "Federico Chiesa",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Federico Chiesa", "Immobile"],
+        "image": "italy-euro-2020"
+      },
+      {
+        "id": "MP-009",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Πορτογαλίας (Τελικός Euro 2016);",
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Cristiano Ronaldo", "Éder"],
+        "image": "portugal-euro-2016"
+      },
+      {
+        "id": "MP-010",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Λίβερπουλ (Τελικός Champions League 2019);",
+        "answer": "Mohamed Salah",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Salah", "Firmino"],
+        "image": "liverpool-ucl-2019"
+      },
+      {
+        "id": "MP-011",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Μπάγερν Μονάχου (Τελικός Champions League 2020);",
+        "answer": "Alphonso Davies",
+        "answer_type": "player",
+        "points": 2,
+        "fifty_fifty": ["Alphonso Davies", "Boateng"],
+        "image": "bayern-ucl-2020"
+      }
+    ],
+    "X3": [
+      {
+        "id": "MP-012",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Άρσεναλ (Τελικός UEFA Cup 2000);",
+        "answer": "Thierry Henry",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Thierry Henry", "Kanu"],
+        "image": "arsenal-uefa-2000"
+      },
+      {
+        "id": "MP-013",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Μίλαν (Τελικός Champions League 2007);",
+        "answer": "Kaká",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Kaká", "Seedorf"],
+        "image": "milan-ucl-2007"
+      },
+      {
+        "id": "MP-014",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Ολλανδίας (Ημιτελικός Μουντιάλ 2010);",
+        "answer": "Arjen Robben",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Arjen Robben", "Sneijder"],
+        "image": "netherlands-wc-2010"
+      },
+      {
+        "id": "MP-015",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Βραζιλίας (Παγκόσμιο Κύπελλο 2002);",
+        "answer": "Ronaldinho",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Ronaldinho", "Ronaldo"],
+        "image": "brazil-world-cup-2002"
+      },
+      {
+        "id": "MP-016",
+        "question": "Ποιος παίκτης λείπει από την ενδεκάδα της Ελλάδας (Τελικός Euro 2004);",
+        "answer": "Charisteas",
+        "answer_type": "player",
+        "points": 3,
+        "fifty_fifty": ["Charisteas", "Zagorakis"],
+        "image": "greece-euro-2004"
       }
     ]
   }

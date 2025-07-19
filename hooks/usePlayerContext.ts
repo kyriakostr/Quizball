@@ -17,6 +17,10 @@ export const usePlayerContext = () => {
     currentPlayer,
     playersInfo,
     gameDetails,
+    doublePointsRound,
+    answeredQuestions,
+    setAnsweredQuestions,
+    setDoublePointsRound,
     setGameDetails,
     setPlayersInfo,
     setCurrentPlayer,
@@ -32,14 +36,24 @@ export const usePlayerContext = () => {
     setWinningPlayer(winningPlayer);
   };
 
-  const setCurrentPlayersHelps = () => {
-    setCurrentPlayer((prev) => ({
-      ...prev,
-      help: {
-        fiftyFifty: true,
-        doublePoints: prev.help.doublePoints,
-      },
-    }));
+  const setCurrentPlayersHelps = (fiftyFifty: boolean) => {
+    if (fiftyFifty) {
+      setCurrentPlayer((prev) => ({
+        ...prev,
+        help: {
+          fiftyFifty: true,
+          doublePoints: prev.help.doublePoints,
+        },
+      }));
+    } else {
+      setCurrentPlayer((prev) => ({
+        ...prev,
+        help: {
+          fiftyFifty: prev.help.fiftyFifty,
+          doublePoints: true,
+        },
+      }));
+    }
   };
 
   const setDefaultPlayerInfo = () => {
@@ -48,6 +62,8 @@ export const usePlayerContext = () => {
         ? player1DeafaultInfo
         : player2DeafaultInfo
     );
+    setDoublePointsRound(false);
+    setAnsweredQuestions([]);
     setPlayersInfo(newDefaultPlayersInfo);
     setCurrentPlayer(player1DeafaultInfo);
     setGameDetails({});
@@ -120,8 +136,14 @@ export const usePlayerContext = () => {
     }
   };
 
-  const addPointsToPlayer = (correct: boolean, questionPoints: number) => {
-    const points = correct ? questionPoints : 0;
+  const addPointsToPlayer = (
+    correct: boolean,
+    help: boolean,
+    questionPoints: number
+  ) => {
+    const allpoints = help ? 1 : questionPoints;
+    let points = correct ? allpoints : 0;
+    points = doublePointsRound ? 2 * points : points;
     setCurrentPlayer((prev) => ({
       ...prev,
       points: prev.points + points,
@@ -134,6 +156,7 @@ export const usePlayerContext = () => {
     const newPlayer = playersInfo.find(
       (player) => player.playerId !== currentPlayer.playerId
     );
+    setDoublePointsRound(false);
     setPlayersInfo(newPlayersInfo);
     if (newPlayer) {
       setCurrentPlayer(newPlayer);
@@ -143,6 +166,10 @@ export const usePlayerContext = () => {
   return {
     currentPlayer,
     winningPlayer,
+    doublePointsRound,
+    answeredQuestions,
+    setAnsweredQuestions,
+    setDoublePointsRound,
     setCurrentPlayersHelps,
     getFootballTeams,
     setDefaultPlayerInfo,
