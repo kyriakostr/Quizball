@@ -20,11 +20,13 @@ export default function QuizDifficulty({
     setCurrentPlayersHelps,
   } = usePlayerContext();
   const { getQuestion } = useGetQuestions();
-  const animationArray: { difficulty: Difficulty; animatedValue: any }[] = [];
-  difficultyArray.map((p) =>
-    animationArray.push({
-      difficulty: p,
-      animatedValue: useRef(new Animated.Value(0)).current,
+  const animationsRefs = useRef(
+    difficultyArray.map(() => new Animated.Value(0))
+  ).current;
+  const animationArray: { difficulty: Difficulty; animatedValue: any }[] =
+  difficultyArray.map((difficulty, index) => ({
+      difficulty,
+      animatedValue: animationsRefs[index],
     })
   );
   useEffect(() => {

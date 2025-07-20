@@ -10,13 +10,16 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
 import { QuizSelectionprops } from "../screenparams/ScreenParams";
 import DoublePointsHelp from "../shared/DoublePointsHelp";
+
 export default function QuizSelection({ navigation }: QuizSelectionprops) {
   const { currentPlayer, disableCategory } = usePlayerContext();
-  const animationArray: { category: Category; animatedValue: any }[] = [];
-  Object.keys(categoryPlaysMap).map((p) =>
-    animationArray.push({
-      category: p as Category,
-      animatedValue: useRef(new Animated.Value(0)).current,
+  const animationsRefs = useRef(
+    Object.keys(categoryPlaysMap).map(() => new Animated.Value(0))
+  ).current;
+  const animationArray: { category: Category; animatedValue: any }[] =
+  Object.keys(categoryPlaysMap).map((category, index) =>({
+      category: category as Category,
+      animatedValue: animationsRefs[index],
     })
   );
   useFocusEffect(() => {
