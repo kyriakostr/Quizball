@@ -1,81 +1,133 @@
+import CategoryRow from "@/components/CaterogryRow";
+import { useGetQuestions } from "@/hooks/useGetQuestions";
+import { usePlayerContext } from "@/hooks/usePlayerContext";
+import { useQuestionOptions } from "@/hooks/useQuestionOptions";
+import categoryPlaysMap from "@/types/category-plays.map";
+import { Category } from "@/types/category.enum";
+import { useFocusEffect } from "@react-navigation/native";
 import React, { useEffect, useRef } from "react";
-import { Animated, Text } from "react-native";
-import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { Alert, Animated, BackHandler, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import SelectCategoryButton from "@/components/SelectCategoryButton";
 import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
-import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
+import { QuizSelectionprops } from "../screenparams/ScreenParams";
+import DoublePointsHelp from "../shared/DoublePointsHelp";
 
-export default function QuizSelection() {
-  const anim1 = useRef(new Animated.Value(0)).current;
-  const anim2 = useRef(new Animated.Value(0)).current;
-  const anim3 = useRef(new Animated.Value(0)).current;
+export default function QuizSelection({ navigation }: QuizSelectionprops) {
+  const { currentPlayer, disableCategory } = usePlayerContext();
+
+  const animationsRefs = useRef(
+    Object.keys(categoryPlaysMap).map(() => new Animated.Value(0))
+  ).current;
+
+  const animationArray: { category: Category; animatedValue: any }[] =
+    Object.keys(categoryPlaysMap).map((category, index) => ({
+      category: category as Category,
+      animatedValue: animationsRefs[index],
+    }));
+
+  const { getQuestionOptions, getGroupedQuestions } = useQuestionOptions();
+  const groupedQuestions = getGroupedQuestions();
+  const { getQuestion } = useGetQuestions();
 
   useEffect(() => {
-    Animated.stagger(150, [
-      Animated.spring(anim1, {
-        toValue: 1,
-        useNativeDriver: true,
-        friction: 5,
-      }),
-      Animated.spring(anim2, {
-        toValue: 1,
-        useNativeDriver: true,
-        friction: 5,
-      }),
-      Animated.spring(anim3, {
-        toValue: 1,
-        useNativeDriver: true,
-        friction: 5,
-      }),
-    ]).start();
-  }, []);
+    // const questionOptions = getQuestionOptions();
+    const groupedQuestions = getGroupedQuestions();
+    console.log("QuizSelection - groupedQuestions updated:", groupedQuestions);
+  }, [getQuestionOptions, getGroupedQuestions]);
+
+  useFocusEffect(() => {
+    const backAction = () => {
+      Alert.alert(
+        "Hold on!",
+        "Are you sure you want to go back?You are going to end the game",
+        [
+          {
+            text: "Cancel",
+            onPress: () => null,
+            style: "cancel",
+          },
+          { text: "YES", onPress: () => navigation.popToTop() },
+        ]
+      );
+      return true;
+    };
+
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      backAction
+    );
+
+    return () => backHandler.remove();
+  });
+
+  useEffect(() => {
+    Animated.stagger(
+      250,
+      animationArray.map((value) =>
+        Animated.spring(value.animatedValue, {
+          toValue: 1,
+          useNativeDriver: true,
+          friction: 5,
+        })
+      )
+    ).start();
+  }, [animationArray]);
 
   return (
     <SafeAreaView style={quizSelectionStyles.view}>
       <Text style={quizSelectionStyles.title}>Select a category</Text>
+      <Text style={quizSelectionStyles.playerTitle}>
+        {currentPlayer.playerId.toUpperCase()} Plays
+      </Text>
+      <Text style={quizSelectionStyles.playerTitle}>
+        {currentPlayer.points} Points
+      </Text>
+      {Object.keys(groupedQuestions).map((categoryKey, index) => {
+        const category = categoryKey as Category;
+        const categoryQuestions = groupedQuestions[category];
+        return (
+          <Animated.View
+            style={{
+              transform: [
+                {
+                  scale: animationArray[index]?.animatedValue.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [0.6, 1],
+                  }),
+                },
+              ],
+              opacity: animationArray[index]?.animatedValue || 1,
+            }}
+            key={category}
+          >
+            <CategoryRow
+              category={category}
+              questions={categoryQuestions}
+              onPointSelect={(difficulty) => {
+                const availableQuestions = categoryQuestions.filter(
+                  (question) =>
+                    question.difficulty === difficulty && question.isAvailable
+                );
 
-      <Animated.View
-        style={{
-          transform: [
-            {
-              scale: anim1.interpolate({
-                inputRange: [0, 1],
-                outputRange: [0.6, 1],
-              }),
-            },
-          ],
-          opacity: anim1,
-        }}
-      >
-        <SelectCategoryButton
-          text="Ιστορία"
-          color="#A2653C"
-          icon={
-            <MaterialIcons name="temple-buddhist" size={24} color="white" />
-          }
-        />
-      </Animated.View>
+                if (availableQuestions.length > 0) {
+                  const question = getQuestion(category, difficulty);
 
-      <Animated.View
-        style={{
-          transform: [
-            {
-              scale: anim2.interpolate({
-                inputRange: [0, 1],
-                outputRange: [0.6, 1],
-              }),
-            },
-          ],
-          opacity: anim2,
-        }}
-      >
-        <SelectCategoryButton
-          text="Γεωγραφία"
-          color="#00BCD4"
-          icon={<FontAwesome6 name="earth-americas" size={24} color="white" />}
-        />
-      </Animated.View>
+                  if (question) {
+                    navigation.push("app-stack/quizes/QuestionScreen", {
+                      question: question,
+                      category: category,
+                      difficulty: difficulty,
+                    });
+                  }
+                }
+              }}
+              disabled={disableCategory(category)}
+            />
+          </Animated.View>
+        );
+      })}
+
+      <DoublePointsHelp />
     </SafeAreaView>
   );
 }

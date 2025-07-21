@@ -1,0 +1,1162 @@
+[
+  {
+    "player": {
+      "id": 874,
+      "name": "Cristiano Ronaldo",
+      "firstname": "Cristiano Ronaldo",
+      "lastname": "dos Santos Aveiro",
+      "age": 40,
+      "birth": {
+        "date": "1985-02-05",
+        "place": "Funchal",
+        "country": "Portugal"
+      },
+      "nationality": "Portugal",
+      "height": "187 cm",
+      "weight": "83 kg",
+      "number": 7,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/874.png"
+    }
+  },
+  {
+    "player": {
+      "id": 2659,
+      "name": "Omar Ammar",
+      "firstname": "Omar",
+      "lastname": "Ammar",
+      "age": 19,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/2659.png"
+    }
+  },
+  {
+    "player": {
+      "id": 2965,
+      "name": "M. Kanzari",
+      "firstname": null,
+      "lastname": "Kanzari",
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": null,
+      "photo": "https://media.api-sports.io/football/players/2965.png"
+    }
+  },
+  {
+    "player": {
+      "id": 2966,
+      "name": "M. Okbi",
+      "firstname": null,
+      "lastname": "Okbi",
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": null,
+      "photo": "https://media.api-sports.io/football/players/2966.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3020,
+      "name": "K. Bukasa",
+      "firstname": null,
+      "lastname": "Bukasa",
+      "age": 32,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3020.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3030,
+      "name": "C. Ngulubi",
+      "firstname": null,
+      "lastname": "Ngulubi",
+      "age": 26,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3030.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3114,
+      "name": "D. Assiongbo",
+      "firstname": null,
+      "lastname": "Assiongbo",
+      "age": 21,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": 14,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3114.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3121,
+      "name": "J. Landel",
+      "firstname": null,
+      "lastname": "Landel",
+      "age": 20,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": 5,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3121.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3122,
+      "name": "Ismael Sylla",
+      "firstname": "Ismael",
+      "lastname": "Sylla",
+      "age": 27,
+      "birth": {
+        "date": "1998-01-01",
+        "place": null,
+        "country": "Guinea"
+      },
+      "nationality": "Guinea",
+      "height": null,
+      "weight": null,
+      "number": 15,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3122.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3124,
+      "name": "M. Camara",
+      "firstname": null,
+      "lastname": "Camara",
+      "age": 22,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": 23,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3124.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3126,
+      "name": "M. N'diaye",
+      "firstname": null,
+      "lastname": "N'diaye",
+      "age": 21,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": 8,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3126.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3129,
+      "name": "M. Thiam",
+      "firstname": "Mohamed",
+      "lastname": "Thiam",
+      "age": 29,
+      "birth": {
+        "date": "1996-06-22",
+        "place": null,
+        "country": "Guinea"
+      },
+      "nationality": "Guinea",
+      "height": null,
+      "weight": null,
+      "number": 4,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3129.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3142,
+      "name": "J. Rafelambolasoa",
+      "firstname": null,
+      "lastname": null,
+      "age": 34,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3142.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3145,
+      "name": "P. Ratahinjanahary",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3145.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3150,
+      "name": "J. Marobe",
+      "firstname": null,
+      "lastname": null,
+      "age": 34,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3150.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3254,
+      "name": "D. Kanjaa",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3254.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3255,
+      "name": "F. Karongee",
+      "firstname": null,
+      "lastname": null,
+      "age": 35,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3255.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3269,
+      "name": "Itamunua Keimuine",
+      "firstname": "Itamunua",
+      "lastname": "Keimuine",
+      "age": 26,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/3269.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3271,
+      "name": "W. Pinehas",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/3271.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3297,
+      "name": "Ndulu",
+      "firstname": null,
+      "lastname": null,
+      "age": 23,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/3297.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3298,
+      "name": "Beny Tchssingui",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/3298.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3310,
+      "name": "Sozito",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3310.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3318,
+      "name": "Megue",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3318.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3358,
+      "name": "Z. Youba",
+      "firstname": null,
+      "lastname": null,
+      "age": 20,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": 13,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3358.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3359,
+      "name": "S. Abdallahi",
+      "firstname": "Moussa Samba",
+      "lastname": "Abdallah",
+      "age": 36,
+      "birth": {
+        "date": "1988-12-31",
+        "place": null,
+        "country": "Mauritania"
+      },
+      "nationality": "Mauritania",
+      "height": null,
+      "weight": null,
+      "number": 20,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3359.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3361,
+      "name": "M. Baghayoko",
+      "firstname": "Moussa Sidi",
+      "lastname": "Bagayoko",
+      "age": 41,
+      "birth": {
+        "date": "1983-12-31",
+        "place": null,
+        "country": "Mauritania"
+      },
+      "nationality": "Mauritania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3361.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3373,
+      "name": "K. Traoré",
+      "firstname": "Karamogho Moussa",
+      "lastname": "Traoré",
+      "age": 36,
+      "birth": {
+        "date": "1988-12-31",
+        "place": "Nouakchott",
+        "country": "Mauritania"
+      },
+      "nationality": "Mauritania",
+      "height": "190 cm",
+      "weight": "75 kg",
+      "number": 9,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/3373.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3377,
+      "name": "S. Glodjinon",
+      "firstname": "Steve",
+      "lastname": "Glodjinon",
+      "age": 31,
+      "birth": {
+        "date": "1993-12-18",
+        "place": null,
+        "country": "Benin"
+      },
+      "nationality": "Benin",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/3377.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3648,
+      "name": "D. Buxaj",
+      "firstname": "Daniel",
+      "lastname": "Buxaj",
+      "age": 24,
+      "birth": {
+        "date": "2000-08-09",
+        "place": "Gjirokastër",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3648.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3658,
+      "name": "T. Zoi",
+      "firstname": "Thoma",
+      "lastname": "Zoi",
+      "age": 24,
+      "birth": {
+        "date": "2000-09-05",
+        "place": "Gjirokastër",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/3658.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3662,
+      "name": "A. Bella",
+      "firstname": "Aristotel",
+      "lastname": "Bella",
+      "age": 25,
+      "birth": {
+        "date": "2000-01-29",
+        "place": "Volos",
+        "country": "Greece"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3662.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3668,
+      "name": "K. Kondili",
+      "firstname": "Kostandin",
+      "lastname": "Kondili",
+      "age": 25,
+      "birth": {
+        "date": "1999-10-04",
+        "place": null,
+        "country": "Greece"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3668.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3672,
+      "name": "Gerard Salaria",
+      "firstname": "Gerard",
+      "lastname": "Salaria",
+      "age": 24,
+      "birth": {
+        "date": "2000-07-22",
+        "place": "Gjirokastër",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3672.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3674,
+      "name": "D. Andoni",
+      "firstname": "Dhimitër",
+      "lastname": "Andoni",
+      "age": 26,
+      "birth": {
+        "date": "1998-09-12",
+        "place": "Athína",
+        "country": "Greece"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/3674.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3677,
+      "name": "F. Lazaj",
+      "firstname": "Fjorald",
+      "lastname": "Lazaj",
+      "age": 25,
+      "birth": {
+        "date": "1999-09-08",
+        "place": "Gjirokastër",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Attacker",
+      "photo": "https://media.api-sports.io/football/players/3677.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3679,
+      "name": "A. Çekrezi",
+      "firstname": "Amarildo",
+      "lastname": "Çekrezi",
+      "age": 31,
+      "birth": {
+        "date": "1993-08-11",
+        "place": "Elbasan",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/3679.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3681,
+      "name": "M. Ziri",
+      "firstname": "Muhamet",
+      "lastname": "Ziri",
+      "age": 23,
+      "birth": {
+        "date": "2001-08-02",
+        "place": "Tiranë",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/3681.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3719,
+      "name": "A. Balliu",
+      "firstname": "Albi",
+      "lastname": "Balliu",
+      "age": 25,
+      "birth": {
+        "date": "1999-11-22",
+        "place": "Tiranë",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3719.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3726,
+      "name": "K. Nazari",
+      "firstname": "Kevin",
+      "lastname": "Nazari",
+      "age": 27,
+      "birth": {
+        "date": "1997-12-15",
+        "place": "Tiranë",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/3726.png"
+    }
+  },
+  {
+    "player": {
+      "id": 3794,
+      "name": "I. Allmuça",
+      "firstname": null,
+      "lastname": null,
+      "age": null,
+      "birth": {
+        "date": null,
+        "place": null,
+        "country": null
+      },
+      "nationality": null,
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": null,
+      "photo": "https://media.api-sports.io/football/players/3794.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4062,
+      "name": "Semir Gjokaj",
+      "firstname": "Semir",
+      "lastname": "Gjokaj",
+      "age": 39,
+      "birth": {
+        "date": "1986-07-11",
+        "place": "Shkodër",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4062.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4130,
+      "name": "Altjon Hoxha",
+      "firstname": "Altjon",
+      "lastname": "Hoxha",
+      "age": 31,
+      "birth": {
+        "date": "1993-11-20",
+        "place": "Bulqizë",
+        "country": "Albania"
+      },
+      "nationality": "Albania",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4130.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4389,
+      "name": "M. Negab",
+      "firstname": "Mohamed Lamine",
+      "lastname": "Negab",
+      "age": 35,
+      "birth": {
+        "date": "1989-09-17",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/4389.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4397,
+      "name": "A. Nameur",
+      "firstname": "Abdelhak",
+      "lastname": "Nameur",
+      "age": 30,
+      "birth": {
+        "date": "1994-07-28",
+        "place": "Beni Messous",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4397.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4403,
+      "name": "M. Hambli",
+      "firstname": "Mohamed Zakaria",
+      "lastname": "Hambli",
+      "age": 27,
+      "birth": {
+        "date": "1998-07-02",
+        "place": "Hydra",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4403.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4415,
+      "name": "A. Saidoune",
+      "firstname": "Anouar",
+      "lastname": "Saidoune",
+      "age": 27,
+      "birth": {
+        "date": "1998-01-18",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/4415.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4417,
+      "name": "K. Ait idir",
+      "firstname": "Karim",
+      "lastname": "Ait Idir",
+      "age": 28,
+      "birth": {
+        "date": "1997-02-04",
+        "place": "Freha",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4417.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4430,
+      "name": "M. Kabari",
+      "firstname": "Mohamed Amine",
+      "lastname": "Kabari",
+      "age": 32,
+      "birth": {
+        "date": "1993-05-29",
+        "place": "Ain M'lila",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4430.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4445,
+      "name": "K. Benmouna",
+      "firstname": "Karim",
+      "lastname": "Benmouna",
+      "age": 28,
+      "birth": {
+        "date": "1997-01-09",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4445.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4453,
+      "name": "T. Arezki",
+      "firstname": "Tarik",
+      "lastname": "Arezki",
+      "age": 28,
+      "birth": {
+        "date": "1997-03-06",
+        "place": "Akbou",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4453.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4521,
+      "name": "I. Medafai",
+      "firstname": "Ilias",
+      "lastname": "Medafai",
+      "age": 26,
+      "birth": {
+        "date": "1998-08-05",
+        "place": "Maghnia",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4521.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4568,
+      "name": "Y. Roudine",
+      "firstname": "Yacine",
+      "lastname": "Roudine",
+      "age": 34,
+      "birth": {
+        "date": "1991-01-20",
+        "place": "Algiers",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4568.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4604,
+      "name": "M. Bramki",
+      "firstname": "Mohamed Amine",
+      "lastname": "Bramki",
+      "age": 29,
+      "birth": {
+        "date": "1996-03-06",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4604.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4620,
+      "name": "A. Maïza",
+      "firstname": "Abdelkrim",
+      "lastname": "Maïza",
+      "age": 31,
+      "birth": {
+        "date": "1994-06-13",
+        "place": "Bordj Bou Arréridj",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players/4620.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4632,
+      "name": "W. Athmani",
+      "firstname": "Walid",
+      "lastname": "Athmani",
+      "age": 33,
+      "birth": {
+        "date": "1992-04-18",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Midfielder",
+      "photo": "https://media.api-sports.io/football/players/4632.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4651,
+      "name": "B. Adraoui",
+      "firstname": "Mohamed Bachir",
+      "lastname": "Adraoui",
+      "age": 29,
+      "birth": {
+        "date": "1995-10-29",
+        "place": "Aïn M'lila",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4651.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4802,
+      "name": "O. Addouane",
+      "firstname": "Oussama",
+      "lastname": "Addouane",
+      "age": 27,
+      "birth": {
+        "date": "1997-11-08",
+        "place": "Biskra",
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Defender",
+      "photo": "https://media.api-sports.io/football/players/4802.png"
+    }
+  },
+  {
+    "player": {
+      "id": 4816,
+      "name": "A. Hamzaoui",
+      "firstname": "Ammar",
+      "lastname": "Hamzaoui",
+      "age": 34,
+      "birth": {
+        "date": "1991-07-03",
+        "place": null,
+        "country": "Algeria"
+      },
+      "nationality": "Algeria",
+      "height": null,
+      "weight": null,
+      "number": null,
+      "position": "Goalkeeper",
+      "photo": "https://media.api-sports.io/football/players"
+    }
+  }
+]
