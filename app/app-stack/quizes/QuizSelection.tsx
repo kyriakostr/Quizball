@@ -1,6 +1,7 @@
-import SelectCategoryButton from "@/components/SelectCategoryButton";
+import CategoryRow from "@/components/CaterogryRow";
+import { useGetQuestions } from "@/hooks/useGetQuestions";
 import { usePlayerContext } from "@/hooks/usePlayerContext";
-import categoryPlaysAnimationMap from "@/types/category-plays-animation.map";
+import { useQuestionOptions } from "@/hooks/useQuestionOptions";
 import categoryPlaysMap from "@/types/category-plays.map";
 import { Category } from "@/types/category.enum";
 import { useFocusEffect } from "@react-navigation/native";
@@ -13,15 +14,27 @@ import DoublePointsHelp from "../shared/DoublePointsHelp";
 
 export default function QuizSelection({ navigation }: QuizSelectionprops) {
   const { currentPlayer, disableCategory } = usePlayerContext();
+
   const animationsRefs = useRef(
     Object.keys(categoryPlaysMap).map(() => new Animated.Value(0))
   ).current;
+
   const animationArray: { category: Category; animatedValue: any }[] =
-  Object.keys(categoryPlaysMap).map((category, index) =>({
+    Object.keys(categoryPlaysMap).map((category, index) => ({
       category: category as Category,
       animatedValue: animationsRefs[index],
-    })
-  );
+    }));
+
+  const { getQuestionOptions, getGroupedQuestions } = useQuestionOptions();
+  const groupedQuestions = getGroupedQuestions();
+  const { getQuestion } = useGetQuestions();
+
+  useEffect(() => {
+    // const questionOptions = getQuestionOptions();
+    const groupedQuestions = getGroupedQuestions();
+    console.log("QuizSelection - groupedQuestions updated:", groupedQuestions);
+  }, [getQuestionOptions, getGroupedQuestions]);
+
   useFocusEffect(() => {
     const backAction = () => {
       Alert.alert(
@@ -58,7 +71,7 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
         })
       )
     ).start();
-  }, []);
+  }, [animationArray]);
 
   return (
     <SafeAreaView style={quizSelectionStyles.view}>
@@ -69,36 +82,50 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
       <Text style={quizSelectionStyles.playerTitle}>
         {currentPlayer.points} Points
       </Text>
-      {animationArray.map((value, index) => (
-        <Animated.View
-          style={{
-            transform: [
-              {
-                scale: value.animatedValue.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [0.6, 1],
-                }),
-              },
-            ],
-            opacity: value.animatedValue,
-          }}
-          key={index}
-        >
-          <SelectCategoryButton
-            onPress={() => {
-              navigation.push("app-stack/quizes/QuizDifficulty", {
-                difficultyArray: categoryPlaysMap[value.category],
-                category: value.category,
-                color: categoryPlaysAnimationMap[value.category].color,
-              });
+      {Object.keys(groupedQuestions).map((categoryKey, index) => {
+        const category = categoryKey as Category;
+        const categoryQuestions = groupedQuestions[category];
+        return (
+          <Animated.View
+            style={{
+              transform: [
+                {
+                  scale: animationArray[index]?.animatedValue.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [0.6, 1],
+                  }),
+                },
+              ],
+              opacity: animationArray[index]?.animatedValue || 1,
             }}
-            disabled={disableCategory(value.category)}
-            text={categoryPlaysAnimationMap[value.category].text}
-            color={categoryPlaysAnimationMap[value.category].color}
-            icon={categoryPlaysAnimationMap[value.category].icon}
-          />
-        </Animated.View>
-      ))}
+            key={category}
+          >
+            <CategoryRow
+              category={category}
+              questions={categoryQuestions}
+              onPointSelect={(difficulty) => {
+                const availableQuestions = categoryQuestions.filter(
+                  (question) =>
+                    question.difficulty === difficulty && question.isAvailable
+                );
+
+                if (availableQuestions.length > 0) {
+                  const question = getQuestion(category, difficulty);
+
+                  if (question) {
+                    navigation.push("app-stack/quizes/QuestionScreen", {
+                      question: question,
+                      category: category,
+                      difficulty: difficulty,
+                    });
+                  }
+                }
+              }}
+              disabled={disableCategory(category)}
+            />
+          </Animated.View>
+        );
+      })}
 
       <DoublePointsHelp />
     </SafeAreaView>

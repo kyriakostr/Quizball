@@ -29,6 +29,7 @@ export default function QuestionScreen({
     setNewCurrentPlayer,
     addPointsToPlayer,
     endTheGame,
+    setAnsweredQuestions,
   } = usePlayerContext();
   const { question, category, difficulty } = route.params;
   useBackHandler();
@@ -90,6 +91,10 @@ export default function QuestionScreen({
           disabled={error !== "" || correctAnswer !== ""}
           onPress={() => {
             setGameDetailsInfo(category, difficulty);
+
+            if (question) {
+              setAnsweredQuestions((prev) => [...prev, question]);
+            }
 
             if (!answer) {
               setError("🚫 Not the correct answer.");
