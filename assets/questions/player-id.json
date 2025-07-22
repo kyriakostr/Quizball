@@ -13,7 +13,8 @@
         ],
         "answer": "Cristiano Ronaldo",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Cristiano Ronaldo", "Robert Lewandowski"]
       },
       {
         "id": "TOP5-002",
@@ -31,7 +32,8 @@
         ],
         "answer": "Zlatan Ibrahimović",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Zlatan Ibrahimović", "Didier Drogba"]
       },
       {
         "id": "TOP5-003",
@@ -46,7 +48,8 @@
         ],
         "answer": "Luis Suárez",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Luis Suárez", "Carlos Tevez"]
       },
       {
         "id": "TOP5-004",
@@ -57,7 +60,8 @@
         ],
         "answer": "Andrés Iniesta",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Andrés Iniesta", "Xabi Alonso"]
       },
       {
         "id": "TOP5-005",
@@ -73,7 +77,8 @@
         ],
         "answer": "Ángel Di María",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Ángel Di María", "David Silva"]
       },
       {
         "id": "TOP5-006",
@@ -86,7 +91,8 @@
         ],
         "answer": "Cesc Fàbregas",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Cesc Fàbregas", "Jack Wilshere"]
       },
       {
         "id": "TOP5-007",
@@ -98,7 +104,8 @@
         ],
         "answer": "Thiago Alcântara",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Thiago Alcântara", "Isco"]
       },
       {
         "id": "TOP5-008",
@@ -112,7 +119,8 @@
         ],
         "answer": "Keylor Navas",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Keylor Navas", "Claudio Bravo"]
       },
       {
         "id": "TOP5-009",
@@ -124,7 +132,8 @@
         ],
         "answer": "Sergio Agüero",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Sergio Agüero", "Higuaín"]
       },
       {
         "id": "TOP5-010",
@@ -138,7 +147,8 @@
         ],
         "answer": "Mesut Özil",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Mesut Özil", "Santi Cazorla"]
       },
       {
         "id": "TOP5-011",
@@ -148,7 +158,8 @@
         ],
         "answer": "Manuel Neuer",
         "answer_type": "player",
-        "points": 2
+        "points": 2,
+        "fifty_fifty": ["Manuel Neuer", "Iker Casillas"]
       }
     ]
   }

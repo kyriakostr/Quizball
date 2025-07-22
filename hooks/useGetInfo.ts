@@ -1,9 +1,10 @@
 import { AnswerType } from "@/types/answer-type.enum";
-import { Question, Top5Question } from "@/types/question.type";
+import { CategoryQuestions } from "@/types/question.type";
 import { useEffect, useState } from "react";
 import countries from "../assets/data/countries.json";
 import players from "../assets/data/players.json";
-export const useGetInfo = (question?: Question | Top5Question) => {
+
+export const useGetInfo = (question?: CategoryQuestions) => {
   const [info, setInfo] = useState<any[]>([]);
   const [suggestions, setSuggestions] = useState<string[]>([]);
 

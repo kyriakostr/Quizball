@@ -20,14 +20,20 @@ const categoryPlaysAnimationMap: Record<Category, CategoryInfo> = {
     color: "#00BCD4",
     icon: <FontAwesome6 name="earth-americas" size={24} color="white" />,
   },
+  [Category.TOP5]: {
+    text: "Top5",
+    color: "#00C878",
+    icon: <AntDesign name="totop" size={24} color="white" />,
+  },
   [Category.PLAYERMISSING]: {
     text: "Ποιος λείπει;",
     color: "#6CD3A7",
     icon: <AntDesign name="question" size={24} color="white" />,
   },
-  [Category.TOP5]: {
-    text: "Top5",
-    color: "#6CD3A7",
+
+  [Category.PLAYERID]: {
+    text: "PLAYER ID",
+    color: "#8C42D8",
     icon: <AntDesign name="totop" size={24} color="white" />,
   },
 };

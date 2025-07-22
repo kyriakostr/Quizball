@@ -3,4 +3,5 @@ export enum Category {
   GEOGRAPHY = "geography",
   PLAYERMISSING = "player-missing",
   TOP5 = "top5",
+  PLAYERID = "player-id",
 }

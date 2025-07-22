@@ -7,9 +7,10 @@ import { useFocusEffect } from "@react-navigation/native";
 import React, { useEffect, useRef } from "react";
 import { Alert, Animated, BackHandler, ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import DoublePointsHelp from "../../../components/shared/DoublePointsHelp";
 import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
 import { QuizSelectionprops } from "../screenparams/ScreenParams";
-import DoublePointsHelp from "../shared/DoublePointsHelp";
+
 export default function QuizSelection({ navigation }: QuizSelectionprops) {
   const { currentPlayer, disableCategory } = usePlayerContext();
   const animationArray: { category: Category; animatedValue: any }[] = [];
@@ -59,14 +60,22 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
 
   return (
     <SafeAreaView style={quizSelectionStyles.view}>
-      <Text style={quizSelectionStyles.title}>Select a category</Text>
-      <Text style={quizSelectionStyles.playerTitle}>
-        {currentPlayer.playerId.toUpperCase()} Plays
-      </Text>
-      <Text style={quizSelectionStyles.playerTitle}>
-        {currentPlayer.points} Points
-      </Text>
-      <ScrollView contentContainerStyle={{ flex: 1, alignItems: "center" }}>
+      <ScrollView
+        contentContainerStyle={{
+          paddingVertical: 30,
+          paddingHorizontal: 20,
+          alignItems: "center",
+          justifyContent: "flex-start",
+        }}
+        showsVerticalScrollIndicator={false}
+      >
+        <Text style={quizSelectionStyles.title}>Select a category</Text>
+        <Text style={quizSelectionStyles.playerTitle}>
+          {currentPlayer.playerId.toUpperCase()} Plays
+        </Text>
+        <Text style={quizSelectionStyles.playerTitle}>
+          {currentPlayer.points} Points
+        </Text>
         {animationArray.map((value, index) => (
           <Animated.View
             style={{
@@ -87,13 +96,12 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
               disabled={disableCategory(value.category)}
               text={categoryPlaysAnimationMap[value.category].text}
               color={categoryPlaysAnimationMap[value.category].color}
-              // icon={categoryPlaysAnimationMap[value.category].icon}
             />
           </Animated.View>
         ))}
-      </ScrollView>
 
-      <DoublePointsHelp />
+        <DoublePointsHelp />
+      </ScrollView>
     </SafeAreaView>
   );
 }

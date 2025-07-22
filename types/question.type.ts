@@ -1,4 +1,10 @@
-export type CategoryQuestions = Question | Top5Question | undefined;
+import { PlayerID } from "./player-id.type";
+
+export type CategoryQuestions =
+  | Question
+  | Top5Question
+  | PlayerIDQuestion
+  | undefined;
 
 export type Question = {
   id: string;
@@ -16,4 +22,13 @@ export type Top5Question = {
   answer: string[];
   points: number;
   answer_type?: string;
+};
+
+export type PlayerIDQuestion = {
+  id: string;
+  question: PlayerID[];
+  answer: string;
+  points: number;
+  answer_type?: string;
+  fiftyFifty: string[] | number[];
 };

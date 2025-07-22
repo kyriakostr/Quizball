@@ -13,9 +13,9 @@ import {
 } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-native-safe-area-context";
+import FiftyFiftyHelp from "../../../components/shared/FiftyFiftyHelp";
 import { questionScreenStyles } from "../app-stack-styles/QuestionScreen.styles";
 import { QuestionScreenprops } from "../screenparams/ScreenParams";
-import FiftyFiftyHelp from "../shared/FiftyFiftyHelp";
 
 export default function QuestionScreen({
   navigation,

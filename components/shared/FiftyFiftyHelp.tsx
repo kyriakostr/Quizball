@@ -1,7 +1,7 @@
 import { usePlayerContext } from "@/hooks/usePlayerContext";
-import { Question } from "@/types/question.type";
+import { PlayerIDQuestion, Question } from "@/types/question.type";
 import { Text, TouchableOpacity, View } from "react-native";
-import { questionScreenStyles } from "../app-stack-styles/QuestionScreen.styles";
+import { questionScreenStyles } from "../../app/app-stack/app-stack-styles/QuestionScreen.styles";
 
 type FiftyFiftyHelpProps = {
   error: string;
@@ -9,7 +9,7 @@ type FiftyFiftyHelpProps = {
   help: boolean;
   setHelp: (help: boolean) => void;
   setAnswer: (text: string | number) => void;
-  question?: Question;
+  question?: Question | PlayerIDQuestion;
 };
 
 export default function FiftyFiftyHelp({

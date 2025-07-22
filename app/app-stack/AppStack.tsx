@@ -1,5 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import WelcomeScreen from "./FirstScreen";
+import PlayerIDScreen from "./quizes/PlayerIDScreen";
 import QuestionScreen from "./quizes/QuestionScreen";
 import QuizDifficulty from "./quizes/QuizDifficulty";
 import QuizSelection from "./quizes/QuizSelection";
@@ -35,6 +36,11 @@ export default function AppStack() {
       <Stack.Screen
         name="app-stack/quizes/Top5Screen"
         component={Top5Screen}
+        options={{ animation: "fade_from_bottom" }}
+      />
+      <Stack.Screen
+        name="app-stack/quizes/PlayerIDScreen"
+        component={PlayerIDScreen}
         options={{ animation: "fade_from_bottom" }}
       />
     </Stack.Navigator>

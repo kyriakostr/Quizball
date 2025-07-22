@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 export const questionScreenStyles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: "#e0f7fa",
     alignItems: "center",
     justifyContent: "space-evenly",

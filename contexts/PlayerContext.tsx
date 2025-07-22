@@ -1,7 +1,9 @@
 import { GameDetails } from "@/types/player-details.type";
 import { PlayerInfo } from "@/types/player-info.type";
 import { PlayerId } from "@/types/playerId.enum";
-import { Question, Top5Question } from "@/types/question.type";
+import {
+  CategoryQuestions
+} from "@/types/question.type";
 import { createContext, FC, PropsWithChildren, useState } from "react";
 
 export const player1DeafaultInfo: PlayerInfo = {
@@ -27,9 +29,9 @@ export const PlayerContext = createContext<{
   currentPlayer: PlayerInfo;
   gameDetails: GameDetails;
   doublePointsRound: boolean;
-  answeredQuestions: (Question | Top5Question)[];
+  answeredQuestions: CategoryQuestions[];
   setAnsweredQuestions: React.Dispatch<
-    React.SetStateAction<(Question | Top5Question)[]>
+    React.SetStateAction<CategoryQuestions[]>
   >;
   setDoublePointsRound: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentPlayer: React.Dispatch<React.SetStateAction<PlayerInfo>>;
@@ -58,7 +60,7 @@ export const PlayerProvider: FC<PropsWithChildren> = ({ children }) => {
     useState<PlayerInfo>(player1DeafaultInfo);
   const [gameDetails, setGameDetails] = useState<GameDetails>({});
   const [answeredQuestions, setAnsweredQuestions] = useState<
-    (Question | Top5Question)[]
+    CategoryQuestions[]
   >([]);
 
   return (

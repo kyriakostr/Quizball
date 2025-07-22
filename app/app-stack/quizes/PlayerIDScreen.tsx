@@ -1,3 +1,4 @@
+import PlayerIDCard from "@/components/PlayerIDCard";
 import { useBackHandler } from "@/hooks/useBackHandler";
 import { useGetInfo } from "@/hooks/useGetInfo";
 import { usePlayerContext } from "@/hooks/usePlayerContext";
@@ -6,36 +7,38 @@ import { CommonActions } from "@react-navigation/native";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { SafeAreaView } from "react-native-safe-area-context";
+import FiftyFiftyHelp from "../../../components/shared/FiftyFiftyHelp";
 import { questionScreenStyles } from "../app-stack-styles/QuestionScreen.styles";
-import { Top5ScreenProps } from "../screenparams/ScreenParams";
+import { PlayerIDScreenProps } from "../screenparams/ScreenParams";
 
-export default function Top5Screen({ navigation, route }: Top5ScreenProps) {
-  const { top5question, category, difficulty } = route.params;
-
+export default function PlayerIDScreen({
+  navigation,
+  route,
+}: PlayerIDScreenProps) {
+  const { category, difficulty, playerIDquestion } = route.params;
+  const { setSuggestionsArray, suggestions } = useGetInfo(playerIDquestion);
+  useBackHandler();
   const {
-    submitTop5Questions,
     answer,
-    answers,
-    correctAnswer,
     error,
-    firstError,
+    correctAnswer,
+    help,
+    setHelp,
     setAnswer,
+    submitPlayerIDQuestions,
   } = useSubmitAnswers();
 
-  useBackHandler();
-
-  const { setSuggestionsArray, suggestions } = useGetInfo(top5question);
-
   const { setNewCurrentPlayer, endTheGame } = usePlayerContext();
+
   return (
     <SafeAreaView style={questionScreenStyles.container}>
       <KeyboardAwareScrollView
-        showsVerticalScrollIndicator={false}
         contentContainerStyle={[questionScreenStyles.container, { gap: 10 }]}
       >
-        <Text style={questionScreenStyles.titleText}>
-          🎯{top5question?.question}
-        </Text>
+        {playerIDquestion && (
+          <PlayerIDCard playerIDquestion={playerIDquestion} />
+        )}
+
         <TextInput
           style={questionScreenStyles.input}
           placeholder="Your Answer"
@@ -71,31 +74,20 @@ export default function Top5Screen({ navigation, route }: Top5ScreenProps) {
           ]}
           activeOpacity={0.7}
           onPress={() => {
-            submitTop5Questions(category, difficulty, top5question);
+            submitPlayerIDQuestions(category, difficulty, playerIDquestion);
           }}
         >
           <Text style={questionScreenStyles.buttonText}>🎉 Submit</Text>
         </TouchableOpacity>
-        {top5question?.answer.map((value, index) => (
-          <View
-            style={{
-              flex: 1,
-              flexDirection: "row",
-              gap: 10,
-            }}
-          >
-            <Text style={questionScreenStyles.titleText}>{index + 1}.</Text>
-            <TextInput
-              style={questionScreenStyles.input}
-              placeholder="Your Answer"
-              placeholderTextColor="#aaa"
-              value={answers[index]}
-            />
-          </View>
-        ))}
-        {firstError !== "" && (
-          <Text style={questionScreenStyles.errorText}>{firstError}</Text>
-        )}
+
+        <FiftyFiftyHelp
+          error={error}
+          correctAnswer={correctAnswer}
+          help={help}
+          setHelp={setHelp}
+          setAnswer={setAnswer}
+          question={playerIDquestion}
+        />
         {error !== "" && (
           <Text style={questionScreenStyles.errorText}>{error}</Text>
         )}
@@ -103,7 +95,6 @@ export default function Top5Screen({ navigation, route }: Top5ScreenProps) {
         {correctAnswer !== "" && (
           <Text style={questionScreenStyles.correctText}>{correctAnswer}</Text>
         )}
-
         {!endTheGame() && (
           <TouchableOpacity
             style={[

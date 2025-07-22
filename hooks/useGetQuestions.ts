@@ -3,11 +3,13 @@ import { Category } from "@/types/category.enum";
 import { Difficulty } from "@/types/difficulty.enum";
 import {
   CategoryQuestions,
+  PlayerIDQuestion,
   Question,
   Top5Question,
 } from "@/types/question.type";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import playerId from "../assets/questions/player-id.json";
 import questions from "../assets/questions/questions.json";
 import top5 from "../assets/questions/top5.json";
 import { usePlayerContext } from "./usePlayerContext";
@@ -21,6 +23,14 @@ export const useGetQuestions = () => {
     difficulty: Difficulty
   ): CategoryQuestions => {
     switch (category) {
+      case Category.PLAYERID:
+        const playerIDquestion = getPlayerIDQuestion(category, difficulty);
+        navigation.push("app-stack/quizes/PlayerIDScreen", {
+          playerIDquestion,
+          category,
+          difficulty,
+        });
+        return playerIDquestion;
       case Category.TOP5:
         const top5question = getTop5Question(category, difficulty);
         navigation.push("app-stack/quizes/Top5Screen", {
@@ -55,7 +65,7 @@ export const useGetQuestions = () => {
       difficulties?.[Math.floor(Math.random() * difficulties.length)];
 
     while (
-      answeredQuestions.some((question) => question.id === randomQuestion?.id)
+      answeredQuestions.some((question) => question?.id === randomQuestion?.id)
     ) {
       randomQuestion =
         difficulties?.[Math.floor(Math.random() * difficulties.length)];
@@ -91,7 +101,7 @@ export const useGetQuestions = () => {
       difficulties?.[Math.floor(Math.random() * difficulties.length)];
 
     while (
-      answeredQuestions.some((question) => question.id === randomQuestion?.id)
+      answeredQuestions.some((question) => question?.id === randomQuestion?.id)
     ) {
       randomQuestion =
         difficulties?.[Math.floor(Math.random() * difficulties.length)];
@@ -103,6 +113,41 @@ export const useGetQuestions = () => {
         question: randomQuestion.question,
         answer: randomQuestion.answer,
         points: randomQuestion.points,
+        answer_type: randomQuestion.answer_type
+          ? randomQuestion.answer_type
+          : undefined,
+      };
+    }
+  };
+
+  const getPlayerIDQuestion = (
+    category: Category,
+    difficulty: Difficulty
+  ): PlayerIDQuestion | undefined => {
+    const matchingCategory = playerId[category as keyof typeof playerId];
+
+    let difficulties;
+    if (difficulty in matchingCategory) {
+      difficulties =
+        matchingCategory[difficulty as keyof typeof matchingCategory];
+    }
+    let randomQuestion =
+      difficulties?.[Math.floor(Math.random() * difficulties.length)];
+
+    while (
+      answeredQuestions.some((question) => question?.id === randomQuestion?.id)
+    ) {
+      randomQuestion =
+        difficulties?.[Math.floor(Math.random() * difficulties.length)];
+    }
+
+    if (randomQuestion) {
+      return {
+        id: randomQuestion.id,
+        question: randomQuestion.question,
+        answer: randomQuestion.answer,
+        points: randomQuestion.points,
+        fiftyFifty: randomQuestion.fifty_fifty,
         answer_type: randomQuestion.answer_type
           ? randomQuestion.answer_type
           : undefined,

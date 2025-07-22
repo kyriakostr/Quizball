@@ -4,7 +4,6 @@ const quizSelectionStyles = StyleSheet.create({
   view: {
     flex: 1,
     alignItems: "center",
-    paddingVertical: 30,
     backgroundColor: "#d0f0f2",
     gap: 20,
   },
