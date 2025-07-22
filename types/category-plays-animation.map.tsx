@@ -25,6 +25,11 @@ const categoryPlaysAnimationMap: Record<Category, CategoryInfo> = {
     color: "#6CD3A7",
     icon: <AntDesign name="question" size={24} color="white" />,
   },
+  [Category.TOP5]: {
+    text: "Top5",
+    color: "#6CD3A7",
+    icon: <AntDesign name="totop" size={24} color="white" />,
+  },
 };
 
 export default categoryPlaysAnimationMap;

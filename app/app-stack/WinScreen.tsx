@@ -12,15 +12,21 @@ export default function WinScreen({ navigation }: WinScreenprops) {
     getWinningPlayer();
   }, []);
 
-  const winner = winningPlayer?.playerId.toUpperCase() || "PLAYER";
+  const winner = winningPlayer?.playerId.toUpperCase();
 
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.emoji}>🎉🏆🎉</Text>
 
-      <Text style={styles.winnerText}>{winner} WINS!</Text>
+      <Text style={styles.winnerText}>
+        {winner ? `${winner} WINS!` : "TIE"}{" "}
+      </Text>
 
-      <Text style={styles.subText}>Congratulations, champion! 👑</Text>
+      <Text style={styles.subText}>
+        {winner
+          ? "Congratulations, champion! 👑"
+          : "It looks like you are both great!"}{" "}
+      </Text>
 
       <Pressable
         style={styles.button}

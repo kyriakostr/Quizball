@@ -1,3 +1,4 @@
+import { getFontSize } from "@/app/global-styles/Global.styles";
 import { StyleSheet } from "react-native";
 
 const selectCategoryButtonStyles = StyleSheet.create({
@@ -14,11 +15,11 @@ const selectCategoryButtonStyles = StyleSheet.create({
     shadowRadius: 4,
     alignItems: "center",
     marginVertical: 8,
-    width: "60%",
+    width: "95%",
   },
   text: {
     color: "#fff",
-    fontSize: 16,
+    fontSize: getFontSize(16),
     fontWeight: "600",
     letterSpacing: 0.5,
   },

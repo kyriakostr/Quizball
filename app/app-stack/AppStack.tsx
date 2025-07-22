@@ -3,6 +3,7 @@ import WelcomeScreen from "./FirstScreen";
 import QuestionScreen from "./quizes/QuestionScreen";
 import QuizDifficulty from "./quizes/QuizDifficulty";
 import QuizSelection from "./quizes/QuizSelection";
+import Top5Screen from "./quizes/Top5Screen";
 import { RootParamsList } from "./screenparams/ScreenParams";
 import WinScreen from "./WinScreen";
 
@@ -29,6 +30,11 @@ export default function AppStack() {
       <Stack.Screen
         name="app-stack/quizes/QuestionScreen"
         component={QuestionScreen}
+        options={{ animation: "fade_from_bottom" }}
+      />
+      <Stack.Screen
+        name="app-stack/quizes/Top5Screen"
+        component={Top5Screen}
         options={{ animation: "fade_from_bottom" }}
       />
     </Stack.Navigator>

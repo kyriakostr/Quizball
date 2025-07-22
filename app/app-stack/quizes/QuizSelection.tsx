@@ -5,7 +5,7 @@ import categoryPlaysMap from "@/types/category-plays.map";
 import { Category } from "@/types/category.enum";
 import { useFocusEffect } from "@react-navigation/native";
 import React, { useEffect, useRef } from "react";
-import { Alert, Animated, BackHandler, Text } from "react-native";
+import { Alert, Animated, BackHandler, ScrollView, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import quizSelectionStyles from "../app-stack-styles/QuizSelection.styles";
 import { QuizSelectionprops } from "../screenparams/ScreenParams";
@@ -66,36 +66,32 @@ export default function QuizSelection({ navigation }: QuizSelectionprops) {
       <Text style={quizSelectionStyles.playerTitle}>
         {currentPlayer.points} Points
       </Text>
-      {animationArray.map((value, index) => (
-        <Animated.View
-          style={{
-            transform: [
-              {
-                scale: value.animatedValue.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [0.6, 1],
-                }),
-              },
-            ],
-            opacity: value.animatedValue,
-          }}
-          key={index}
-        >
-          <SelectCategoryButton
-            onPress={() => {
-              navigation.push("app-stack/quizes/QuizDifficulty", {
-                difficultyArray: categoryPlaysMap[value.category],
-                category: value.category,
-                color: categoryPlaysAnimationMap[value.category].color,
-              });
+      <ScrollView contentContainerStyle={{ flex: 1, alignItems: "center" }}>
+        {animationArray.map((value, index) => (
+          <Animated.View
+            style={{
+              transform: [
+                {
+                  scale: value.animatedValue.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [0.6, 1],
+                  }),
+                },
+              ],
+              opacity: value.animatedValue,
             }}
-            disabled={disableCategory(value.category)}
-            text={categoryPlaysAnimationMap[value.category].text}
-            color={categoryPlaysAnimationMap[value.category].color}
-            icon={categoryPlaysAnimationMap[value.category].icon}
-          />
-        </Animated.View>
-      ))}
+            key={index}
+          >
+            <SelectCategoryButton
+              category={value.category}
+              disabled={disableCategory(value.category)}
+              text={categoryPlaysAnimationMap[value.category].text}
+              color={categoryPlaysAnimationMap[value.category].color}
+              // icon={categoryPlaysAnimationMap[value.category].icon}
+            />
+          </Animated.View>
+        ))}
+      </ScrollView>
 
       <DoublePointsHelp />
     </SafeAreaView>

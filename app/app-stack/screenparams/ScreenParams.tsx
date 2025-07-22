@@ -1,6 +1,6 @@
 import { Category } from "@/types/category.enum";
 import { Difficulty } from "@/types/difficulty.enum";
-import { Question } from "@/types/question.type";
+import { Question, Top5Question } from "@/types/question.type";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 export type RootParamsList = {
@@ -14,6 +14,11 @@ export type RootParamsList = {
   };
   "app-stack/quizes/QuestionScreen": {
     question?: Question;
+    category: Category;
+    difficulty: Difficulty;
+  };
+  "app-stack/quizes/Top5Screen": {
+    top5question?: Top5Question;
     category: Category;
     difficulty: Difficulty;
   };
@@ -39,4 +44,9 @@ export type QuestionScreenprops = NativeStackScreenProps<
 export type WinScreenprops = NativeStackScreenProps<
   RootParamsList,
   "app-stack/WinScreen"
+>;
+
+export type Top5ScreenProps = NativeStackScreenProps<
+  RootParamsList,
+  "app-stack/quizes/Top5Screen"
 >;

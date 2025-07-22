@@ -1,0 +1,155 @@
+{
+  "player-id": {
+    "X2": [
+      {
+        "id": "TOP5-001",
+        "question": [
+          { "team": "Sporting CP", "period": "2002-2003" },
+          { "team": "Manchester United", "period": "2003-2009" },
+          { "team": "Real Madrid", "period": "2009-2018" },
+          { "team": "Juventus", "period": "2018-2021" },
+          { "team": "Manchester United", "period": "2021-2022" },
+          { "team": "Al-Nassr", "period": "2023-" }
+        ],
+        "answer": "Cristiano Ronaldo",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-002",
+        "question": [
+          { "team": "Malmö FF", "period": "1999-2001" },
+          { "team": "Ajax", "period": "2001-2004" },
+          { "team": "Juventus", "period": "2004-2006" },
+          { "team": "Inter Milan", "period": "2006-2009" },
+          { "team": "Barcelona", "period": "2009-2010" },
+          { "team": "AC Milan", "period": "2010-2012" },
+          { "team": "Paris Saint-Germain", "period": "2012-2016" },
+          { "team": "Manchester United", "period": "2016-2018" },
+          { "team": "LA Galaxy", "period": "2018-2020" },
+          { "team": "AC Milan", "period": "2020-2023" }
+        ],
+        "answer": "Zlatan Ibrahimović",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-003",
+        "question": [
+          { "team": "Nacional", "period": "2005-2006" },
+          { "team": "Groningen", "period": "2006-2007" },
+          { "team": "Ajax", "period": "2007-2011" },
+          { "team": "Liverpool", "period": "2011-2014" },
+          { "team": "Barcelona", "period": "2014-2020" },
+          { "team": "Atlético Madrid", "period": "2020-2022" },
+          { "team": "Grêmio", "period": "2023-" }
+        ],
+        "answer": "Luis Suárez",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-004",
+        "question": [
+          { "team": "Barcelona", "period": "2002-2018" },
+          { "team": "Vissel Kobe", "period": "2018-2023" },
+          { "team": "Emirates Club", "period": "2023-2024" }
+        ],
+        "answer": "Andrés Iniesta",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-005",
+        "question": [
+          { "team": "Rosario Central", "period": "2005-2007" },
+          { "team": "Benfica", "period": "2007-2010" },
+          { "team": "Real Madrid", "period": "2010-2014" },
+          { "team": "Manchester United", "period": "2014-2015" },
+          { "team": "Paris Saint-Germain", "period": "2015-2022" },
+          { "team": "Juventus", "period": "2022-2023" },
+          { "team": "Benfica", "period": "2023-2024" },
+          { "team": "Rosario Central", "period": "2024-" }
+        ],
+        "answer": "Ángel Di María",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-006",
+        "question": [
+          { "team": "Arsenal", "period": "2003-2011" },
+          { "team": "Barcelona", "period": "2011-2014" },
+          { "team": "Chelsea", "period": "2014-2019" },
+          { "team": "Monaco", "period": "2019-2022" },
+          { "team": "Como", "period": "2022-2023" }
+        ],
+        "answer": "Cesc Fàbregas",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-007",
+        "question": [
+          { "team": "Barcelona B", "period": "2008-2011" },
+          { "team": "Barcelona", "period": "2009-2013" },
+          { "team": "Bayern Munich", "period": "2013-2020" },
+          { "team": "Liverpool", "period": "2020-2024" }
+        ],
+        "answer": "Thiago Alcântara",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-008",
+        "question": [
+          { "team": "Saprissa", "period": "2005-2010" },
+          { "team": "Albacete", "period": "2010-2011" },
+          { "team": "Levante", "period": "2011-2014" },
+          { "team": "Real Madrid", "period": "2014-2019" },
+          { "team": "Paris Saint-Germain", "period": "2019-2023" },
+          { "team": "Nottingham Forest", "period": "2023" }
+        ],
+        "answer": "Keylor Navas",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-009",
+        "question": [
+          { "team": "Independiente", "period": "2003-2006" },
+          { "team": "Atlético Madrid", "period": "2006-2011" },
+          { "team": "Manchester City", "period": "2011-2021" },
+          { "team": "Barcelona", "period": "2021" }
+        ],
+        "answer": "Sergio Agüero",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-010",
+        "question": [
+          { "team": "Schalke 04", "period": "2006-2008" },
+          { "team": "Werder Bremen", "period": "2008-2010" },
+          { "team": "Real Madrid", "period": "2010-2013" },
+          { "team": "Arsenal", "period": "2013-2021" },
+          { "team": "Fenerbahçe", "period": "2021-2022" },
+          { "team": "İstanbul Başakşehir", "period": "2022-2023" }
+        ],
+        "answer": "Mesut Özil",
+        "answer_type": "player",
+        "points": 2
+      },
+      {
+        "id": "TOP5-011",
+        "question": [
+          { "team": "Schalke 04", "period": "2006-2011" },
+          { "team": "Bayern Munich", "period": "2011-" }
+        ],
+        "answer": "Manuel Neuer",
+        "answer_type": "player",
+        "points": 2
+      }
+    ]
+  }
+}

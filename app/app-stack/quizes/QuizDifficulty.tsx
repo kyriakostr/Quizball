@@ -1,4 +1,3 @@
-import SelectCategoryButton from "@/components/SelectCategoryButton";
 import { useGetQuestions } from "@/hooks/useGetQuestions";
 import { usePlayerContext } from "@/hooks/usePlayerContext";
 import { Difficulty } from "@/types/difficulty.enum";
@@ -58,7 +57,7 @@ export default function QuizDifficulty({
           }}
           key={index}
         >
-          <SelectCategoryButton
+          {/* <SelectCategoryButton
             text={value.difficulty}
             color={color}
             disabled={disableDifficulty(category, value.difficulty)}
@@ -76,7 +75,7 @@ export default function QuizDifficulty({
                 difficulty: value.difficulty,
               });
             }}
-          />
+          /> */}
         </Animated.View>
       ))}
     </SafeAreaView>

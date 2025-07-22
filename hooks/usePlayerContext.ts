@@ -34,6 +34,10 @@ export const usePlayerContext = () => {
     )[0];
 
     setWinningPlayer(winningPlayer);
+
+    if (winningPlayer.points === playersInfo[1].points) {
+      setWinningPlayer(undefined);
+    }
   };
 
   const setCurrentPlayersHelps = (fiftyFifty: boolean) => {
@@ -75,9 +79,10 @@ export const usePlayerContext = () => {
         const actualDifficulties = gameDetails[category];
         if (!actualDifficulties) return false;
 
-        const hasAllDifficulties = expectedDifficulties.every((diff) =>
-          actualDifficulties.includes(diff)
-        );
+        const hasAllDifficulties =
+          expectedDifficulties.every((diff) =>
+            actualDifficulties.includes(diff)
+          ) && expectedDifficulties.length === actualDifficulties.length;
 
         return hasAllDifficulties;
       }
@@ -98,12 +103,21 @@ export const usePlayerContext = () => {
 
   const disableDifficulty = (
     category: Category,
-    difficulty: Difficulty
+    difficulty: Difficulty,
+    index: number
   ): boolean => {
     if (
       gameDetails &&
       gameDetails[category] &&
-      gameDetails[category].includes(difficulty)
+      gameDetails[category][index] === categoryPlaysMap[category][index]
+    ) {
+      return true;
+    }
+    if (
+      gameDetails &&
+      gameDetails[category] &&
+      gameDetails[category].includes(difficulty) &&
+      !categoryPlaysMap[category].every((dif) => dif === difficulty)
     ) {
       return true;
     }
@@ -115,8 +129,6 @@ export const usePlayerContext = () => {
       let currentDetails: GameDetails = {};
       if (!prev || !prev[category]) {
         currentDetails[category] = [difficulty];
-      } else if (prev[category].includes(difficulty)) {
-        currentDetails[category] = [...prev[category]];
       } else {
         currentDetails[category] = [...prev[category], difficulty];
       }

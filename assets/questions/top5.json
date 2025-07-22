@@ -1,0 +1,97 @@
+{
+  "top5": {
+    "X3": [
+      {
+        "id": "TOP5-001",
+        "question": "Ποιοι είναι οι 5 πρώτοι σκόρερ στην ιστορία του Champions League;",
+        "answer": [
+          "Cristiano Ronaldo",
+          "Lionel Messi",
+          "Robert Lewandowski",
+          "Karim Benzema",
+          "Raúl"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-005",
+        "question": "Ποιοι είναι οι 5 παίκτες με τις περισσότερες εμφανίσεις στην ιστορία του Παγκοσμίου Κυπέλλου;",
+        "answer": [
+          "Lothar Matthäus",
+          "Lionel Messi",
+          "Cristiano Ronaldo",
+          "Miroslav Klose",
+          "Diego Maradona"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-006",
+        "question": "Ποιοι είναι οι 5 πρώτοι σκόρερ στην ιστορία του Euro (UEFA Ευρωπαϊκό Πρωτάθλημα);",
+        "answer": [
+          "Cristiano Ronaldo",
+          "Michel Platini",
+          "Antoine Griezmann",
+          "Alan Shearer",
+          "Ruud van Nistelrooy"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-007",
+        "question": "Ποιοι είναι οι 5 πιο ακριβοπληρωμένοι παίκτες ποδοσφαίρου όλων των εποχών (σύνολο καριέρας);",
+        "answer": [
+          "Cristiano Ronaldo",
+          "Lionel Messi",
+          "Neymar",
+          "Kylian Mbappé",
+          "Andrés Iniesta"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-008",
+        "question": "Ποιοι 5 παίκτες έχουν τις περισσότερες κατακτήσεις UEFA Champions League;",
+        "answer": [
+          "Paco Gento",
+          "Toni Kroos",
+          "Luka Modrić",
+          "Karim Benzema",
+          "Cristiano Ronaldo"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-009",
+        "question": "Ποιοι είναι οι 5 τερματοφύλακες με τις περισσότερες αποκρούσεις σε Παγκόσμια Κύπελλα;",
+        "answer": [
+          "Tim Howard",
+          "Manuel Neuer",
+          "Keylor Navas",
+          "Guillermo Ochoa",
+          "Iker Casillas"
+        ],
+        "answer_type": "player",
+        "points": 3
+      },
+      {
+        "id": "TOP5-010",
+        "question": "Ποιοι είναι οι 5 παίκτες με τις περισσότερες συμμετοχές στο Champions League;",
+        "answer": [
+          "Cristiano Ronaldo",
+          "Iker Casillas",
+          "Lionel Messi",
+          "Karim Benzema",
+          "Xavi Hernández"
+        ],
+        "answer_type": "player",
+        "points": 3
+      }
+    ]
+  }
+}

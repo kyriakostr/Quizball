@@ -1,3 +1,4 @@
+import { getFontSize } from "@/app/global-styles/Global.styles";
 import { StyleSheet } from "react-native";
 
 export const questionScreenStyles = StyleSheet.create({
@@ -58,12 +59,12 @@ export const questionScreenStyles = StyleSheet.create({
   },
   errorText: {
     color: "red",
-    fontSize: 16,
+    fontSize: getFontSize(16),
     fontWeight: "bold",
   },
   correctText: {
     color: "green",
-    fontSize: 18,
+    fontSize: getFontSize(18),
     fontWeight: "bold",
   },
   suggestionList: {
